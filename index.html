@@ -144,6 +144,42 @@
 
 
 
+			.create-and-schedule-section{
+        background-color: #F9EEE2;
+
+        padding: clamp(0px, 54.38vw ,78.32px) clamp(0px, 2.2vw, 32px);
+			}
+
+			.create-and-schedule-section-content-box{
+				display: flex;
+				flex-direction: column;
+				gap: clamp(0px, 1.66vw, 24px);
+			}
+
+			.create-and-schedule-section-h2{
+				font-size: clamp(0px, 2.8vw, 40px);
+        line-height: clamp(20px, 2.52vw, 36px);
+
+				font-weight: var(--desctop-text-preset-font-weight-2);
+        /* font-size: var(--desctop-text-preset-font-size-2); */
+        letter-spacing:var(--desctop-text-preset-letter-spacing-2);
+        /* line-height: var(--desctop-text-preset-line-height-2); */
+
+				margin: 0;
+				padding: 0;
+			}
+
+
+
+			.create-and-schedule-section-pic{
+				width: clamp(0px, 13.22vw, 190.47px);
+				height: clamp(0px, 6.27vw, 90.35px);
+
+			}
+
+
+
+
 
 .maintain-a-consistent-section {
   background-color: #FFCC6A;
@@ -159,7 +195,7 @@
         padding-right: clamp(0px, 1.66vw, 24px);
 }
 
-.maintain-a-consistent-section-box{
+.maintain-a-consistent-section-content-box{
 
 	display: flex;
 	flex-direction: column;
@@ -339,6 +375,53 @@ margin: 0;
 
 
 
+
+
+
+
+
+
+				.create-and-schedule-section{
+					padding: 75.07px 24px;
+				}
+
+.create-and-schedule-section-content-box{
+	gap: 24px;
+	width: 247px;
+}
+
+				.create-and-schedule-section-h2{
+   font-weight: var(  --tablet-text-preset-font-weight-2);
+        font-size: var(  --tablet-text-preset-font-size-2);
+        letter-spacing: var( --tablet-text-preset-letter-spacing-2);
+        line-height: var(  --tablet-text-preset-line-height-2);
+				/* width: 250px; */
+				}
+
+
+				.create-and-schedule-section-pic{
+				width: 190.47px;
+				height: 90.35px;
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				.maintain-a-consistent-section{
 
         padding-left: 24px;
@@ -346,7 +429,7 @@ margin: 0;
         padding-right: 24px;
 }
 
-.maintain-a-consistent-section-box{
+.maintain-a-consistent-section-content-box{
 
 	display: flex;
 	flex-direction: column;
@@ -510,6 +593,71 @@ margin: 0;
 
 
 
+				.create-and-schedule-section{
+					grid-row: 1;
+					grid-column: 1/-1;
+
+					/* padding: 32px 32px; */
+
+					padding: 32px 32px;
+				
+
+				
+				
+				
+				}
+
+
+		
+
+				.create-and-schedule-section-content-box{
+	gap: 24px;
+	width: 275px;
+}
+
+				.create-and-schedule-section-h2{
+   /* font-weight: var(--mobile-text-preset-font-weight-2); */
+   font-weight: 500;
+        font-size: var(--mobile-text-preset-font-size-2);
+        letter-spacing: -2%;
+        line-height: var(--mobile-text-preset-line-height-2);
+
+				}
+
+
+				/* .create-and-schedule-section-pic{
+				width: 190.47px;
+				height: 90.35px;
+
+			} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				.maintain-a-consistent-section {
 
 					grid-row: 3;
@@ -537,6 +685,7 @@ padding: 0;
 /* background-color: #fff; */
 /* width: 251px; */
 margin: 0;
+
 }
 
 
@@ -609,6 +758,17 @@ width:200px;
           text-align: center;
         }
       }
+
+
+
+			@media (max-width: 374px) {
+
+				.create-and-schedule-section{
+					padding-left: 16px;
+				}
+			}
+
+			
     </style>
   </head>
   <body>
@@ -621,7 +781,7 @@ width:200px;
         <!-- <section class="one">1</section> -->
         <!-- <section class="two">2</section> -->
         <section class="maintain-a-consistent-section">
-					<div class="maintain-a-consistent-section-box">
+					<div class="maintain-a-consistent-section-content-box">
 						<h2 class="maintain-a-consistent-section-h2">Maintain a consistent posting schedule.</h2>
 						<img class='maintain-a-consistent-section-pic' src="./img/maintain-a-consistent-section-pic.svg" alt="Consistent posting schedule">
 					</div>
@@ -656,7 +816,19 @@ width:200px;
           </div>
         </section>
       </div>
+
       <div class="lower-group">
+
+
+				<section class="create-and-schedule-section">
+					<div class="create-and-schedule-section-content-box">
+						<h2 class="create-and-schedule-section-h2">Create and schedule content <span style="color: #7551DC; font-style: italic;">quicker.</span></h2>
+	
+	<img class='create-and-schedule-section-pic' src="./img/create-and-schedule-section-pic.svg" alt="Create post button">
+
+					</div>
+				</section>
+	
         <!-- <section class="six">7</section>
 				<section class="six">8</section> -->
       </div>
