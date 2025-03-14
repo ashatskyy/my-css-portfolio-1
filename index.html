@@ -40,7 +40,7 @@
 
         --tablet-text-preset-font-weight-3: 400;
         --tablet-text-preset-font-size-3: 28px;
-        --tablet-text-preset-letter-spacing-3: -2px;
+        --tablet-text-preset-letter-spacing-3: -1.5px;
         --tablet-text-preset-line-height-3: 26px;
 
 
@@ -136,6 +136,61 @@
       section {
         border-radius: 10px;
       }
+
+
+
+
+
+
+
+
+
+.maintain-a-consistent-section {
+  background-color: #FFCC6A;
+	grid-column: 2/-2;
+	grid-row: 2/3;
+
+        width: auto;
+        height: auto;
+        overflow: hidden;
+
+        padding-left: clamp(0px, 1.66vw, 24px);
+        padding-top: clamp(0px, 1.66vw, 24px);
+        padding-right: clamp(0px, 1.66vw, 24px);
+}
+
+.maintain-a-consistent-section-box{
+
+	display: flex;
+	flex-direction: column;
+gap:  clamp(0px, 1.1vw, 16px);
+	
+}
+
+.maintain-a-consistent-section-h2{
+ /* font-size: var(--desctop-text-preset-font-size-3); */
+ font-size: clamp(0px, 2.2vw, 32px);
+
+font-weight: var(--desctop-text-preset-font-weight-3);
+letter-spacing: var(--desctop-text-preset-letter-spacing-3);
+
+/* line-height: var(--desctop-text-preset-line-height-3); */
+line-height: clamp(0px, 1.97vw, 28px);
+
+padding: 0;
+
+/* width: 192px; */
+margin: 0;
+}
+
+.maintain-a-consistent-section-pic{
+
+	/* padding-top: 16px; */
+	width:  clamp(0px, 14.44vw, 208px);
+	height:  clamp(0px, 10.9vw, 157px);
+}
+
+
 
       .schedule-section {
         background-color: #dbd1fc;
@@ -237,6 +292,11 @@
         padding-left: 11.32px;
       }
 
+
+
+
+
+
       .grow-followers-section-pic {
         width: clamp(0px, 15.81vw, 227.68px);
         height: clamp(0px, 13.9vw, 200.22px);
@@ -273,6 +333,70 @@
           height: 354.5px;
           grid-template-rows: 354.5px;
         }
+
+
+
+
+
+
+				.maintain-a-consistent-section{
+
+        padding-left: 24px;
+        padding-top: 24px;
+        padding-right: 24px;
+}
+
+.maintain-a-consistent-section-box{
+
+	display: flex;
+	flex-direction: column;
+gap:  16px;
+	
+}
+
+.maintain-a-consistent-section-h2{
+ /* font-size: var(--desctop-text-preset-font-size-3); */
+ font-size: 28px;
+
+font-weight: var(--tablet-text-preset-font-weight-3);
+letter-spacing: var(--tablet-text-preset-letter-spacing-3);
+
+/* line-height: var(--desctop-text-preset-line-height-3); */
+line-height: 26px;
+
+padding: 0;
+/* background-color: #fff; */
+width: 251px;
+margin: 0;
+}
+
+.maintain-a-consistent-section-pic{
+
+	/* padding-top: 16px; */
+	width:  208px;
+	height:  157px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         .schedule-section {
           grid-column: 1/-1;
@@ -349,6 +473,16 @@
         }
       }
 
+
+
+
+
+
+
+
+
+
+
       @media (max-width: 767px) {
         .main-content-container {
           margin: 32px auto 40px;
@@ -362,7 +496,8 @@
         .upper-group {
           height: 1885.5px;
 
-          grid-template-rows: 290px 162.54px 216.25px 468.91px 344.22px 215.58px;
+          /* grid-template-rows: 290px 162.54px 216.25px 468.91px 344.22px 215.58px; */
+          grid-template-rows: 290px 162.54px 216.25px 468.91px 372.22px 215.58px;
           row-gap: 32px;
         }
 
@@ -375,6 +510,34 @@
 
 
 
+				.maintain-a-consistent-section {
+
+					grid-row: 3;
+	grid-column: 1/-1;
+
+	padding-left: 16px;
+        padding-top: 16px;
+        padding-right: 16px;
+
+}
+
+
+
+.maintain-a-consistent-section-h2{
+ /* font-size: var(--desctop-text-preset-font-size-3); */
+ font-size: var(--mobile-text-preset-font-size-3);
+
+font-weight: var(--mobile-text-preset-font-weight-3);
+letter-spacing: var(--mobile-text-preset-letter-spacing-3);
+
+/* line-height: var(--desctop-text-preset-line-height-3); */
+line-height: var(--mobile-text-preset-line-height-3);
+
+padding: 0;
+/* background-color: #fff; */
+/* width: 251px; */
+margin: 0;
+}
 
 
 
@@ -422,6 +585,7 @@
 
           padding: 24px 43px;
           justify-content: space-between;
+					/* align-items: center; */
         }
 
         .grow-followers-section-content-box {
@@ -438,9 +602,10 @@
           line-height: var(--mobile-text-preset-line-height-2);
           letter-spacing: var(--mobile-text-preset-letter-spacing-2);
 
-          padding: 0;
+          padding-top: 40px;
+					padding-left: 0;
           margin: 0;
-
+width:200px;
           text-align: center;
         }
       }
@@ -455,8 +620,13 @@
       <div class="upper-group">
         <!-- <section class="one">1</section> -->
         <!-- <section class="two">2</section> -->
-        <!-- <section class="three">3</section> -->
-        <!-- <section class="four">4</section> -->
+        <section class="maintain-a-consistent-section">
+					<div class="maintain-a-consistent-section-box">
+						<h2 class="maintain-a-consistent-section-h2">Maintain a consistent posting schedule.</h2>
+						<img class='maintain-a-consistent-section-pic' src="./img/maintain-a-consistent-section-pic.svg" alt="Consistent posting schedule">
+					</div>
+				</section>
+  
 
         <section class="schedule-section">
           <div class="schedule-section-content-box">
