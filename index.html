@@ -14,11 +14,30 @@
     <title>AwesomeME</title>
 
     <style>
+      :root {
+        --desctop-text-preset-font-weight-2: 400;
+        --desctop-text-preset-font-size-2: 40px;
+        --desctop-text-preset-letter-spacing-2: -1.7px;
+        --desctop-text-preset-line-height-2: 36px;
+
+        --tablet-text-preset-font-weight-2: 400;
+        --tablet-text-preset-font-size-2: 36px;
+        --tablet-text-preset-letter-spacing-2: -1.8px;
+        --tablet-text-preset-line-height-2: 30px;
+
+        --mobile-text-preset-font-weight-2: 400;
+        --mobile-text-preset-font-size-2: 32px;
+        --mobile-text-preset-letter-spacing-2: -1.7px;
+        --mobile-text-preset-line-height-2: 28px;
+      }
+
       * {
         box-sizing: border-box;
       }
 
       body {
+        font-family: "DM Sans", sans-serif;
+
         background-color: #f6f5f6;
         margin: 0;
       }
@@ -30,7 +49,7 @@
         width: 77.778vw;
         height: 881px;
 
-        background-color: #fff;
+        background-color: #ffff;
 
         display: flex;
         flex-direction: row-reverse;
@@ -43,7 +62,8 @@
       }
 
       .upper-group {
-        background-color: blue;
+        /* background-color: red; */
+        background-color: rgb(231, 222, 222);
         width: 74.286%;
 
         display: grid;
@@ -56,13 +76,53 @@
       }
 
       .lower-group {
-        background-color: orange;
+        background-color: rgb(152, 233, 152);
         width: 22.85%;
 
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 415px 434px;
         row-gap: 32px;
+      }
+
+      section {
+        border-radius: 10px;
+      }
+
+      .grow-followers-section {
+        grid-row: 3;
+        grid-column: 2/-1;
+
+        background-color: #7551dc;
+
+        padding: 22.89px 24px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+				justify-content: center;
+
+
+      }
+
+.test-box{
+	        display: flex;
+        flex-direction: row;
+        align-items: center;
+				height: 200.22px;
+}
+
+      .grow-followers-section-h2 {
+        color: #ffff;
+
+        font-weight: var(--desctop-text-preset-font-weight-2);
+        font-size: clamp(0px, 2.8vw, 40px);
+        line-height: clamp(20px, 2.52vw, 36px);
+        letter-spacing: var(--desctop-text-preset-letter-spacing-2);
+
+        /* width: clamp(0px, 17.85vw, 257px); */
+
+        padding-left: 11.32px;
       }
 
       @media (max-width: 1023px) {
@@ -75,8 +135,7 @@
           background-color: #fff;
 
           flex-direction: column;
-          gap: 0;
-          justify-content: space-between;
+   
         }
 
         .upper-group,
@@ -97,14 +156,39 @@
           height: 354.5px;
           grid-template-rows: 354.5px;
         }
+
+        .grow-followers-section {
+          grid-row: 4;
+          grid-column: 1/-1;
+          justify-content: center;
+					/* justify-content: space-between; */
+          padding: 22.89px 81.66px;
+          /* padding: 22.89px 0; */
+        }
+				.test-box{
+					/* justify-content: center; */
+					/* width: 524.68px; */
+					width: 524.68px;
+				
+				}
+        .grow-followers-section-h2 {
+          font-size: var(--tablet-text-preset-font-size-2);
+          font-weight: var(--tablet-text-preset-font-weight-2);
+          line-height: var(--tablet-text-preset-line-height-2);
+          letter-spacing: var(--tablet-text-preset-letter-spacing-2);
+          width: 257px;
+          /* width: 268px; */
+          padding-left: 40px;
+        }
       }
 
       @media (max-width: 767px) {
         .main-content-container {
           margin: 32px auto 40px;
+          /* margin: 0 auto; */
 
           width: 91.42vw;
-          height: 2534.35px;
+          height: 2506.35px;
 
           background-color: #fff;
         }
@@ -112,7 +196,7 @@
         .upper-group {
           height: 1885.5px;
 
-          grid-template-rows: 290px 162.54px 216.25px 468.91px 372.22px 215.58px;
+          grid-template-rows: 290px 162.54px 216.25px 468.91px 344.22px 215.58px;
           row-gap: 32px;
         }
 
@@ -122,17 +206,66 @@
           grid-template-rows: 234.35px 350.5px;
           row-gap: 32px;
         }
+
+        .grow-followers-section {
+          grid-row: 5;
+          grid-column: 1/-1;
+
+          flex-direction: column;
+
+          padding: 24px 43px;
+          justify-content: space-between;
+          /* justify-content: center; */
+        }
+
+				.test-box{
+					flex-direction: column;
+			height: 296.22px;
+			/* height: auto; */
+			justify-content: space-between;
+			width: 257px;
+				}
+
+        .grow-followers-section-h2 {
+          font-size: var(--mobile-text-preset-font-size-2);
+          font-weight: var(--mobile-text-preset-font-weight-2);
+          line-height: var(--mobile-text-preset-line-height-2);
+          letter-spacing: var(--mobile-text-preset-letter-spacing-2);
+
+          padding: 0;
+          margin: 0;
+
+          text-align: center;
+        }
       }
     </style>
   </head>
   <body>
+    <!-- !!!!!!!!!
+		 !!!!!!!!!!!!!!!!
+		 do hot foget hiden h1 -->
+
     <main class="main-content-container">
       <div class="upper-group">
-        <!-- <section class="one">1</section>
-				<section class="two">2</section>
-				<section class="three">3</section>
-				<section class="four">4</section>
-				<section class="five">5</section> -->
+        <!-- <section class="one">1</section> -->
+        <!-- <section class="two">2</section> -->
+        <!-- <section class="three">3</section> -->
+        <!-- <section class="four">4</section> -->
+        <section class="grow-followers-section">
+					<div class="test-box">
+
+						<img
+							style="width: 227.68px; height: 200.22px"
+							src="./img/grow-followers-section-pic.svg"
+							alt="followers count graph"
+						/>
+						<h2 class="grow-followers-section-h2">
+							Grow followers with non-stop content.
+						</h2>
+
+
+					</div>
+        </section>
       </div>
       <div class="lower-group">
         <!-- <section class="six">7</section>
