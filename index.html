@@ -336,6 +336,45 @@
         margin: 0;
       }
 
+			.grow-followers-section {
+        grid-row: 3;
+        grid-column: 2/-1;
+
+        background-color: #7551dc;
+
+        /* padding: 22.89px 24px; */
+        padding: clamp(0px, 1.59vw, 22.89px) clamp(0px, 1.66vw, 24px);
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .grow-followers-section-content-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 200.22px;
+      }
+
+      .grow-followers-section-h2 {
+        color: #ffff;
+
+        font-weight: var(--desctop-text-preset-font-weight-2);
+        font-size: clamp(0px, 2.8vw, 40px);
+        line-height: clamp(20px, 2.52vw, 36px);
+        letter-spacing: var(--desctop-text-preset-letter-spacing-2);
+
+        padding-left: 11.32px;
+      }
+
+			.grow-followers-section-pic {
+        width: clamp(0px, 15.81vw, 227.68px);
+        height: clamp(0px, 13.9vw, 200.22px);
+      }
+
+
       @media (max-width: 1023px) {
         .main-content-container {
           margin: 52px auto 75.69px;
@@ -517,6 +556,31 @@
 
           padding-top: 24px;
         }
+
+				.grow-followers-section {
+          grid-row: 4;
+          grid-column: 1/-1;
+          justify-content: center;
+
+          padding: 22.89px 81.66px;
+        }
+        .grow-followers-section-content-box {
+          width: 524.68px;
+        }
+        .grow-followers-section-h2 {
+          font-size: var(--tablet-text-preset-font-size-2);
+          font-weight: var(--tablet-text-preset-font-weight-2);
+          line-height: var(--tablet-text-preset-line-height-2);
+          letter-spacing: var(--tablet-text-preset-letter-spacing-2);
+          width: 257px;
+
+          padding-left: 40px;
+        }
+        .grow-followers-section-pic {
+          width: 227.68px;
+          height: 200.22px;
+        }
+
 			}
 
       @media (max-width: 767px) {
@@ -634,6 +698,38 @@
         .schedule-section-p {
           width: 279px;
         }
+
+				.grow-followers-section {
+          grid-row: 5;
+          grid-column: 1/-1;
+
+          flex-direction: column;
+
+          padding: 24px 43px;
+          justify-content: space-between;
+        
+        }
+
+        .grow-followers-section-content-box {
+          flex-direction: column;
+          height: 296.22px;
+
+          justify-content: space-between;
+          width: 257px;
+        }
+
+        .grow-followers-section-h2 {
+          font-size: var(--mobile-text-preset-font-size-2);
+          font-weight: var(--mobile-text-preset-font-weight-2);
+          line-height: var(--mobile-text-preset-line-height-2);
+          letter-spacing: var(--mobile-text-preset-letter-spacing-2);
+
+          padding-top: 40px;
+          padding-left: 0;
+          margin: 0;
+          width: 200px;
+          text-align: center;
+        }
 			}
     </style>
   </head>
@@ -694,7 +790,18 @@
           </div>
         </section>
 
-
+				<section class="grow-followers-section">
+          <div class="grow-followers-section-content-box">
+            <img
+              class="grow-followers-section-pic"
+              src="./img/grow-followers-section-pic.svg"
+              alt="followers count graph"
+            />
+            <h2 class="grow-followers-section-h2">
+              Grow followers with non-stop content.
+            </h2>
+          </div>
+        </section>
 
       </div>
 
