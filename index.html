@@ -171,6 +171,62 @@
         height: clamp(0px, 6.27vw, 90.35px);
       }
 
+			.social-media-section {
+        background-color: #7551dc;
+        grid-column: 1/3;
+        grid-row: 1;
+
+        padding: clamp(0px, 4.3056vw, 62px) clamp(0px, 2.2222vw, 32px);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: clamp(0px, 1.6667vw, 24px);
+        color: white;
+      }
+
+      .social-media-section-h2 {
+        font-weight: 400;
+        font-size: clamp(0px, 4.3056vw, 62px);
+        letter-spacing: clamp(-3px, -0.2083vw, 0px);
+        line-height: clamp(0px, 4.0278vw, 58px);
+        text-align: center;
+        margin: 0;
+      }
+
+      .social-media-section-reviews-box {
+        height: clamp(0px, 41.6667vw, 60px);
+
+        display: flex;
+        align-items: center;
+
+        /* justify-content: space-between; */
+        justify-content: center;
+        flex-direction: column;
+
+        gap: clamp(0px, 0.5555vw, 8px);
+      }
+
+      .social-media-section-pic {
+        width: clamp(0px, 13.33333333vw, 192px);
+        height: clamp(0px, 2.22222222vw, 32px);
+      }
+
+      .social-media-section-p {
+        /* font-weight: var(--desctop-text-preset-font-weight-4); */
+        font-weight: 250;
+        font-size: clamp(0px, 1.25vw, 18px);
+        /* letter-spacing: var(--desctop-text-preset-letter-spacing-4); */
+        letter-spacing: clamp(0px, 0.01736vw, 0.25px);
+        line-height: clamp(0px, 1.3889vw, 20px);
+        /* line-height: 20px; */
+        text-align: center;
+
+        /* padding-top: 8px; */
+
+        margin: 0;
+      }
      
 
       @media (max-width: 1023px) {
@@ -227,6 +283,48 @@
           height: 90.35px;
         }
 
+				.social-media-section {
+          padding: 72px 76px;
+          gap: 24px;
+        }
+
+        .social-media-section-h2 {
+          font-weight: 400;
+          font-size: var(--tablet-text-preset-font-size-1);
+          letter-spacing: -2px;
+          line-height: var(--tablet-text-preset-line-height-1);
+          text-align: center;
+          margin: 0;
+        }
+
+        .social-media-section-reviews-box {
+          height: 60px;
+
+          display: flex;
+          align-items: center;
+
+          justify-content: center;
+          flex-direction: column;
+
+          gap: 8px;
+        }
+
+        .social-media-section-pic {
+          width: 192px;
+          height: 32px;
+        }
+
+        .social-media-section-p {
+          font-weight: 250;
+          font-size: var(--desctop-text-preset-font-size-4);
+
+          letter-spacing: var(--desctop-text-preset-letter-spacing-4);
+          line-height: var(--desctop-text-preset-line-height-4);
+
+          text-align: center;
+
+          margin: 0;
+        }
 			}
 
       @media (max-width: 767px) {
@@ -280,6 +378,20 @@
           width: clamp(0px, 52.65vw, 190.47px);
           height: clamp(0px, 24.09vw, 90.35px);
         }
+
+				.social-media-section {
+          padding: 40px 32px;
+          gap: 24px;
+        }
+
+        .social-media-section-h2 {
+          font-weight: 400;
+          font-size: var(--mobile-text-preset-font-size-1);
+          letter-spacing: -2px;
+          line-height: var(--mobile-text-preset-line-height-1);
+          text-align: center;
+          margin: 0;
+        }
 			}
     </style>
   </head>
@@ -294,7 +406,22 @@
 
       <div class="upper-group">
 
-       
+				<section class="social-media-section">
+          <h2 class="social-media-section-h2">
+            Social Media <span style="color: #ffcc6a">10x</span>
+            <span style="font-style: italic">Faster</span> with AI
+          </h2>
+          <div class="social-media-section-reviews-box">
+            <img
+              class="social-media-section-pic"
+              src="./img/review-stars.svg"
+              alt="social media reviews stars"
+            />
+
+            <p class="social-media-section-p">Over 4,000 5-star reviews</p>
+          </div>
+        
+        </section>
       </div>
 
 
