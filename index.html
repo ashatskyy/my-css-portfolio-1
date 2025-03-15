@@ -269,6 +269,73 @@
         height: clamp(0px, 10.9vw, 157px);
       }
 
+			.schedule-section {
+        background-color: #dbd1fc;
+        grid-column: 3/-1;
+        grid-row: 1/3;
+
+        width: auto;
+        height: auto;
+        overflow: hidden;
+
+        padding-left: clamp(0px, 2.22vw, 32px);
+        padding-top: clamp(0px, 3.47vw, 50.09px);
+        padding-bottom: clamp(0px, 3.47vw, 50.09px);
+      }
+
+      .schedule-section-content-box {
+        /* background-color: #fff; */
+
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+      }
+
+      /* .schedule-section-content-box {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+      } */
+
+      .schedule-section-pic {
+        width: clamp(0px, 24.81vw, 357.3px);
+        height: clamp(0px, 22.14vw, 318.82px);
+      }
+
+      .schedule-section-h2 {
+        /* font-size: var(--desctop-text-preset-font-size-3); */
+        font-size: clamp(0px, 2.2vw, 32px);
+
+        font-weight: var(--desctop-text-preset-font-weight-3);
+        letter-spacing: var(--desctop-text-preset-letter-spacing-3);
+
+        /* line-height: var(--desctop-text-preset-line-height-3); */
+        line-height: clamp(0px, 1.97vw, 28px);
+
+        padding-bottom: clamp(0px, 1.66vw, 24px);
+        padding-right: clamp(0px, 1.66vw, 24px);
+
+        /* width: 192px; */
+        margin: 0;
+      }
+
+      .schedule-section-p {
+        /* font-size: var(--desctop-text-preset-font-size-4); */
+        font-size: clamp(0px, 1.25vw, 18px);
+
+        font-weight: var(--desctop-text-preset-font-weight-4);
+        letter-spacing: var(--desctop-text-preset-letter-spacing-4);
+
+        /* line-height: var(--desctop-text-preset-line-height-4); */
+        line-height: clamp(0px, 1.38vw, 20px);
+
+        padding-top: clamp(0px, 1.66vw, 24px);
+        padding-right: clamp(0px, 1.66vw, 24px);
+        /* width: 192px; */
+        margin: 0;
+      }
+
       @media (max-width: 1023px) {
         .main-content-container {
           margin: 52px auto 75.69px;
@@ -399,6 +466,57 @@
           width: 208px;
           height: 157px;
         }
+
+
+				.schedule-section {
+          grid-column: 1/-1;
+          grid-row: 3;
+
+          padding: 32px 50.09px;
+
+          display: flex;
+          /* flex-direction: row; */
+          /* align-items: center; */
+          justify-content: center;
+        }
+
+        .schedule-section-content-box {
+          align-items: center;
+          /* gap:16px; */
+          width: 359px;
+          justify-content: center;
+          height: 432.82px;
+        }
+
+        .schedule-section-pic {
+          width: 357.3px;
+          height: 318.82px;
+        }
+
+        .schedule-section-h2 {
+          font-size: var(--tablet-text-preset-font-size-3);
+
+          font-weight: var(--tablet-text-preset-font-weight-3);
+          letter-spacing: var(--tablet-text-preset-letter-spacing-3);
+
+          line-height: var(--tablet-text-preset-line-height-3);
+          padding-bottom: 24px;
+          padding-right: 0;
+        }
+
+        .schedule-section-p {
+          font-size: var(--desctop-text-preset-font-size-4);
+
+          font-weight: var(--desctop-text-preset-font-weight-4);
+          letter-spacing: var(--desctop-text-preset-letter-spacing-4);
+
+          line-height: var(--desctop-text-preset-line-height-4);
+
+          padding-right: 0;
+          text-align: center;
+
+          padding-top: 24px;
+        }
 			}
 
       @media (max-width: 767px) {
@@ -488,6 +606,34 @@
        
           margin: 0;
         }
+
+				.schedule-section {
+          grid-row: 4;
+          grid-column: 1/-1;
+
+          padding: clamp(0px, 8.53vw, 32px) 32px;
+        }
+
+        .schedule-section-content-box {
+          width: 308.06px;
+          height: 404.91px;
+        }
+
+        .schedule-section-pic {
+          width: clamp(0px, 82.14vw, 308.06px);
+          height: clamp(0px, 72.77vw, 272.91px);
+        }
+
+        .schedule-section-h2 {
+          font-weight: var(--mobile-text-preset-font-weight-3);
+          font-size: var(--mobile-text-preset-font-size-3);
+          letter-spacing: var(--mobile-text-preset-letter-spacing-3);
+          line-height: var(--mobile-text-preset-line-height-3);
+        }
+
+        .schedule-section-p {
+          width: 279px;
+        }
 			}
     </style>
   </head>
@@ -531,6 +677,25 @@
             />
           </div>
         </section>
+
+
+				<section class="schedule-section">
+          <div class="schedule-section-content-box">
+            <h2 class="schedule-section-h2">Schedule to social media.</h2>
+            <img
+              class="schedule-section-pic"
+              src="./img/schedule-section-pic.svg"
+              alt="best time to post graph"
+            />
+            <p class="schedule-section-p">
+              Optimize post timings to publish content at the perfect time for
+              your audience.
+            </p>
+          </div>
+        </section>
+
+
+
       </div>
 
 
