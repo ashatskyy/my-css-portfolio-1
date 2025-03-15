@@ -14,65 +14,11 @@
     <title>AwesomeME</title>
 
     <style>
-      :root {
-        --desctop-text-preset-font-weight-1: 500;
-        --desctop-text-preset-font-size-1: 62px;
-        --desctop-text-preset-letter-spacing-1: -1.7px;
-        --desctop-text-preset-line-height-1: 58px;
-
-        --desctop-text-preset-font-weight-2: 400;
-        --desctop-text-preset-font-size-2: 40px;
-        --desctop-text-preset-letter-spacing-2: -1.7px;
-        --desctop-text-preset-line-height-2: 36px;
-
-        --desctop-text-preset-font-weight-3: 500;
-        --desctop-text-preset-font-size-3: 32px;
-        --desctop-text-preset-letter-spacing-3: -2px;
-        --desctop-text-preset-line-height-3: 28px;
-
-        --desctop-text-preset-font-weight-4: 400;
-        --desctop-text-preset-font-size-4: 18px;
-        --desctop-text-preset-letter-spacing-4: 0px;
-        --desctop-text-preset-line-height-4: 20px;
-
-        --tablet-text-preset-font-weight-1: 500;
-        --tablet-text-preset-font-size-1: 54px;
-        --tablet-text-preset-letter-spacing-1: -2px;
-        --tablet-text-preset-line-height-1: 48px;
-
-        --tablet-text-preset-font-weight-2: 400;
-        --tablet-text-preset-font-size-2: 36px;
-        --tablet-text-preset-letter-spacing-2: -1.8px;
-        --tablet-text-preset-line-height-2: 30px;
-
-        --tablet-text-preset-font-weight-3: 400;
-        --tablet-text-preset-font-size-3: 28px;
-        --tablet-text-preset-letter-spacing-3: -1.5px;
-        --tablet-text-preset-line-height-3: 26px;
-
-        --mobile-text-preset-font-weight-1: 500;
-        --mobile-text-preset-font-size-1: 46px;
-        --mobile-text-preset-letter-spacing-1: -2px;
-        --mobile-text-preset-line-height-1: 42px;
-
-        --mobile-text-preset-font-weight-2: 400;
-        --mobile-text-preset-font-size-2: 32px;
-        --mobile-text-preset-letter-spacing-2: -1.7px;
-        --mobile-text-preset-line-height-2: 28px;
-
-        --mobile-text-preset-font-weight-3: 500;
-        --mobile-text-preset-font-size-3: 26px;
-        --mobile-text-preset-letter-spacing-3: -1.7px;
-        --mobile-text-preset-line-height-3: 24px;
-      }
-
       * {
         box-sizing: border-box;
       }
 
       body {
-        font-family: "DM Sans", sans-serif;
-
         background-color: #f6f5f6;
         margin: 0;
       }
@@ -82,17 +28,13 @@
 
         max-width: 1120px;
         width: 77.778vw;
+        height: 881px;
 
-        /* height: 881px; */
-        /* height: clamp(0px, 61.18vw, 881px); */
-
-        background-color: darkgrey;
+        background-color: #fff;
 
         display: flex;
         flex-direction: row-reverse;
-
-        /* gap: 32px; */
-        gap: clamp(0px, 2.22vw, 32px);
+        gap: 32px;
       }
 
       .upper-group,
@@ -101,352 +43,27 @@
       }
 
       .upper-group {
-        background-color: rgb(231, 222, 222);
+        background-color: blue;
         width: 74.286%;
 
         display: grid;
 
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: clamp(0px, 2.22vw, 32px);
+        column-gap: 32px;
 
-        /* grid-template-rows: 324px 247px 246px; */
-        grid-template-rows: clamp(0px, 22.5vw, 324px) clamp(0px, 17.15vw, 247px) clamp(
-            0px,
-            17.08vw,
-            246px
-          );
-
-        row-gap: clamp(0px, 2.22vw, 32px);
+        grid-template-rows: 324px 247px 246px;
+        row-gap: 32px;
       }
 
       .lower-group {
-        background-color: rgb(152, 233, 152);
+        background-color: orange;
         width: 22.85%;
 
         display: grid;
         grid-template-columns: 1fr;
-
-        /* grid-template-rows: 415px 434px; */
-        grid-template-rows: clamp(0px, 28.82vw, 415px) clamp(
-            0px,
-            30.14vw,
-            434px
-          );
-        /* grid-template-rows: clamp(0px, 28.82vw, 415px) 1fr; */
-        row-gap: clamp(0px, 2.22vw, 32px);
+        grid-template-rows: 415px 434px;
+        row-gap: 32px;
       }
-
-      section {
-        border-radius: 10px;
-      }
-
-      .create-and-schedule-section {
-        background-color: #f9eee2;
-
-        padding: clamp(0px, 5.44vw, 78.32px) clamp(0px, 2.2vw, 32px);
-      }
-
-      .create-and-schedule-section-content-box {
-        display: flex;
-        flex-direction: column;
-        gap: clamp(0px, 1.66vw, 24px);
-      }
-
-      .create-and-schedule-section-h2 {
-        font-size: clamp(0px, 2.8vw, 40px);
-        line-height: clamp(20px, 2.52vw, 36px);
-
-        /* font-weight: var(--desctop-text-preset-font-weight-2); */
-        font-weight: 500;
-        /* font-size: var(--desctop-text-preset-font-size-2); */
-        letter-spacing: -2.5px;
-        /* line-height: var(--desctop-text-preset-line-height-2); */
-
-        margin: 0;
-        padding: 0;
-      }
-
-      .create-and-schedule-section-pic {
-        width: clamp(0px, 13.22vw, 190.47px);
-        height: clamp(0px, 6.27vw, 90.35px);
-      }
-
-      .social-media-section {
-        background-color: #7551dc;
-        grid-column: 1/3;
-        grid-row: 1;
-
-        padding: clamp(0px, 4.3056vw, 62px) clamp(0px, 2.2222vw, 32px);
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        gap: clamp(0px, 1.6667vw, 24px);
-        color: white;
-      }
-
-      .social-media-section-h2 {
-        font-weight: 400;
-        font-size: clamp(0px, 4.3056vw, 62px);
-        letter-spacing: clamp(-3px, -0.2083vw, 0px);
-        line-height: clamp(0px, 4.0278vw, 58px);
-        text-align: center;
-        margin: 0;
-      }
-
-      .social-media-section-reviews-box {
-        height: clamp(0px, 41.6667vw, 60px);
-
-        display: flex;
-        align-items: center;
-
-        /* justify-content: space-between; */
-        justify-content: center;
-        flex-direction: column;
-
-        gap: clamp(0px, 0.5555vw, 8px);
-      }
-
-      .social-media-section-pic {
-        width: clamp(0px, 13.33333333vw, 192px);
-        height: clamp(0px, 2.22222222vw, 32px);
-      }
-
-      .social-media-section-p {
-        /* font-weight: var(--desctop-text-preset-font-weight-4); */
-        font-weight: 250;
-        font-size: clamp(0px, 1.25vw, 18px);
-        /* letter-spacing: var(--desctop-text-preset-letter-spacing-4); */
-        letter-spacing: clamp(0px, 0.01736vw, 0.25px);
-        line-height: clamp(0px, 1.3889vw, 20px);
-        /* line-height: 20px; */
-        text-align: center;
-
-        /* padding-top: 8px; */
-
-        margin: 0;
-      }
-
-      .maintain-a-consistent-section {
-        background-color: #ffcc6a;
-        grid-column: 2/-2;
-        grid-row: 2/3;
-
-        width: auto;
-        height: auto;
-        overflow: hidden;
-
-        padding-left: clamp(0px, 1.66vw, 24px);
-        padding-top: clamp(0px, 1.66vw, 24px);
-        padding-right: clamp(0px, 1.66vw, 24px);
-      }
-
-      .maintain-a-consistent-section-content-box {
-        display: flex;
-        flex-direction: column;
-        gap: clamp(0px, 1.1vw, 16px);
-      }
-
-      .maintain-a-consistent-section-h2 {
-        /* font-size: var(--desctop-text-preset-font-size-3); */
-        font-size: clamp(0px, 2.2vw, 32px);
-
-        font-weight: var(--desctop-text-preset-font-weight-3);
-        letter-spacing: var(--desctop-text-preset-letter-spacing-3);
-
-        /* line-height: var(--desctop-text-preset-line-height-3); */
-        line-height: clamp(0px, 1.97vw, 28px);
-
-        padding: 0;
-
-        /* width: 192px; */
-        margin: 0;
-      }
-
-      .maintain-a-consistent-section-pic {
-        /* padding-top: 16px; */
-        width: clamp(0px, 14.44vw, 208px);
-        height: clamp(0px, 10.9vw, 157px);
-      }
-
-      .schedule-section {
-        background-color: #dbd1fc;
-        grid-column: 3/-1;
-        grid-row: 1/3;
-
-        width: auto;
-        height: auto;
-        overflow: hidden;
-
-        padding-left: clamp(0px, 2.22vw, 32px);
-        padding-top: clamp(0px, 3.47vw, 50.09px);
-        padding-bottom: clamp(0px, 3.47vw, 50.09px);
-      }
-
-      .schedule-section-content-box {
-        /* background-color: #fff; */
-
-        display: flex;
-        flex-direction: column;
-        /* align-items: center; */
-      }
-
-      /* .schedule-section-content-box {
-        display: flex;
-        flex-direction: column;
-
-        justify-content: center;
-      } */
-
-      .schedule-section-pic {
-        width: clamp(0px, 24.81vw, 357.3px);
-        height: clamp(0px, 22.14vw, 318.82px);
-      }
-
-      .schedule-section-h2 {
-        /* font-size: var(--desctop-text-preset-font-size-3); */
-        font-size: clamp(0px, 2.2vw, 32px);
-
-        font-weight: var(--desctop-text-preset-font-weight-3);
-        letter-spacing: var(--desctop-text-preset-letter-spacing-3);
-
-        /* line-height: var(--desctop-text-preset-line-height-3); */
-        line-height: clamp(0px, 1.97vw, 28px);
-
-        padding-bottom: clamp(0px, 1.66vw, 24px);
-        padding-right: clamp(0px, 1.66vw, 24px);
-
-        /* width: 192px; */
-        margin: 0;
-      }
-
-      .schedule-section-p {
-        /* font-size: var(--desctop-text-preset-font-size-4); */
-        font-size: clamp(0px, 1.25vw, 18px);
-
-        font-weight: var(--desctop-text-preset-font-weight-4);
-        letter-spacing: var(--desctop-text-preset-letter-spacing-4);
-
-        /* line-height: var(--desctop-text-preset-line-height-4); */
-        line-height: clamp(0px, 1.38vw, 20px);
-
-        padding-top: clamp(0px, 1.66vw, 24px);
-        padding-right: clamp(0px, 1.66vw, 24px);
-        /* width: 192px; */
-        margin: 0;
-      }
-
-      .grow-followers-section {
-        grid-row: 3;
-        grid-column: 2/-1;
-
-        background-color: #7551dc;
-
-        /* padding: 22.89px 24px; */
-        padding: clamp(0px, 1.59vw, 22.89px) clamp(0px, 1.66vw, 24px);
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .grow-followers-section-content-box {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 200.22px;
-      }
-
-      .grow-followers-section-h2 {
-        color: #ffff;
-
-        font-weight: var(--desctop-text-preset-font-weight-2);
-        font-size: clamp(0px, 2.8vw, 40px);
-        line-height: clamp(20px, 2.52vw, 36px);
-        letter-spacing: var(--desctop-text-preset-letter-spacing-2);
-
-        padding-left: 11.32px;
-      }
-
-			.grow-followers-section-pic {
-        width: clamp(0px, 15.81vw, 227.68px);
-        height: clamp(0px, 13.9vw, 200.22px);
-      }
-
-
-
-
-
-
-
-
-
-
-			.fifty-six-percent-section{
-					background-color: white;
-					grid-row: 3;
-					grid-column: 1/2;
-					
-					padding: clamp(0px, 1.6667vw, 24px);
-					display: flex;
-
-					justify-content: space-between;
-
-					flex-direction: column;
-				}
-
-
-				.fifty-six-percent-section-text-content-box{
-					display: flex;
-
-justify-content: space-between;
-
-flex-direction: column;
-
-height: clamp(0px, 6.4583vw, 93px);
-
-				}
-
-
-				.fifty-six-percent-section-h2{
-					font-weight: 500;
-        font-size: clamp(0px, 4.3056vw, 62px);
-        letter-spacing: clamp(-3px, -0.2083vw, 0px);
-        line-height: clamp(0px, 4.0278vw, 58px);
-     
-        margin: 0;
-				}
-
-
-				.fifty-six-percent-section-p {
-
-        font-weight: 500;
-        font-size: clamp(0px, 1.25vw, 18px);
-     
-        letter-spacing: clamp(0px, 0.01736vw, 0.25px);
-        line-height: clamp(0px, 1.3889vw, 20px);
-
-        margin: 0;
-      }
-
-
-		
-
-
-
-			.fifty-six-percent-section-pic{
-				width: clamp(0px, 12.4257vw, 178.93px);
-				height: clamp(0px, 4.6236vw, 66.58px);
-			}
-
-
-
-
-
-
-     
 
       @media (max-width: 1023px) {
         .main-content-container {
@@ -455,10 +72,11 @@ height: clamp(0px, 6.4583vw, 93px);
           width: 89.584vw;
           height: 1959.31px;
 
-    
+          background-color: #fff;
 
           flex-direction: column;
-          gap: 32px;
+          gap: 0;
+          justify-content: space-between;
         }
 
         .upper-group,
@@ -479,257 +97,16 @@ height: clamp(0px, 6.4583vw, 93px);
           height: 354.5px;
           grid-template-rows: 354.5px;
         }
-
-        .create-and-schedule-section {
-          padding: 75.07px 24px;
-        }
-
-        .create-and-schedule-section-content-box {
-          gap: 24px;
-          width: 247px;
-        }
-
-        .create-and-schedule-section-h2 {
-          font-weight: var(--tablet-text-preset-font-weight-2);
-          font-size: var(--tablet-text-preset-font-size-2);
-          letter-spacing: var(--tablet-text-preset-letter-spacing-2);
-          line-height: var(--tablet-text-preset-line-height-2);
-          /* width: 250px; */
-        }
-
-        .create-and-schedule-section-pic {
-          width: 190.47px;
-          height: 90.35px;
-        }
-
-        .social-media-section {
-          padding: 72px 76px;
-          gap: 24px;
-        }
-
-        .social-media-section-h2 {
-          font-weight: 400;
-          font-size: var(--tablet-text-preset-font-size-1);
-          letter-spacing: -2px;
-          line-height: var(--tablet-text-preset-line-height-1);
-          text-align: center;
-          margin: 0;
-        }
-
-        .social-media-section-reviews-box {
-          height: 60px;
-
-          display: flex;
-          align-items: center;
-
-          justify-content: center;
-          flex-direction: column;
-
-          gap: 8px;
-        }
-
-        .social-media-section-pic {
-          width: 192px;
-          height: 32px;
-        }
-
-        .social-media-section-p {
-          font-weight: 250;
-          font-size: var(--desctop-text-preset-font-size-4);
-
-          letter-spacing: var(--desctop-text-preset-letter-spacing-4);
-          line-height: var(--desctop-text-preset-line-height-4);
-
-          text-align: center;
-
-          margin: 0;
-        }
-
-        .maintain-a-consistent-section {
-          padding-left: 24px;
-          padding-top: 24px;
-          padding-right: 24px;
-        }
-
-        .maintain-a-consistent-section-content-box {
-          display: flex;
-          flex-direction: column;
-          gap: 16px;
-        }
-
-        .maintain-a-consistent-section-h2 {
-          /* font-size: var(--desctop-text-preset-font-size-3); */
-          font-size: 28px;
-
-          font-weight: var(--tablet-text-preset-font-weight-3);
-          letter-spacing: var(--tablet-text-preset-letter-spacing-3);
-
-          /* line-height: var(--desctop-text-preset-line-height-3); */
-          line-height: 26px;
-
-          padding: 0;
-          /* background-color: #fff; */
-          width: 251px;
-          margin: 0;
-        }
-
-        .maintain-a-consistent-section-pic {
-          /* padding-top: 16px; */
-          width: 208px;
-          height: 157px;
-        }
-
-        .schedule-section {
-          grid-column: 1/-1;
-          grid-row: 3;
-
-          padding: 32px 50.09px;
-
-          display: flex;
-          /* flex-direction: row; */
-          /* align-items: center; */
-          justify-content: center;
-        }
-
-        .schedule-section-content-box {
-          align-items: center;
-          /* gap:16px; */
-          width: 359px;
-          justify-content: center;
-          height: 432.82px;
-        }
-
-        .schedule-section-pic {
-          width: 357.3px;
-          height: 318.82px;
-        }
-
-        .schedule-section-h2 {
-          font-size: var(--tablet-text-preset-font-size-3);
-
-          font-weight: var(--tablet-text-preset-font-weight-3);
-          letter-spacing: var(--tablet-text-preset-letter-spacing-3);
-
-          line-height: var(--tablet-text-preset-line-height-3);
-          padding-bottom: 24px;
-          padding-right: 0;
-        }
-
-        .schedule-section-p {
-          font-size: var(--desctop-text-preset-font-size-4);
-
-          font-weight: var(--desctop-text-preset-font-weight-4);
-          letter-spacing: var(--desctop-text-preset-letter-spacing-4);
-
-          line-height: var(--desctop-text-preset-line-height-4);
-
-          padding-right: 0;
-          text-align: center;
-
-          padding-top: 24px;
-        }
-
-        .grow-followers-section {
-          grid-row: 4;
-          grid-column: 1/-1;
-          justify-content: center;
-
-          padding: 22.89px 81.66px;
-        }
-        .grow-followers-section-content-box {
-          width: 524.68px;
-        }
-        .grow-followers-section-h2 {
-          font-size: var(--tablet-text-preset-font-size-2);
-          font-weight: var(--tablet-text-preset-font-weight-2);
-          line-height: var(--tablet-text-preset-line-height-2);
-          letter-spacing: var(--tablet-text-preset-letter-spacing-2);
-          width: 257px;
-
-          padding-left: 40px;
-        }
-        .grow-followers-section-pic {
-          width: 227.68px;
-          height: 200.22px;
-        }
-
-			
-
-				.fifty-six-percent-section{
-					
-					grid-row: 5;
-					grid-column: 1/-1;
-
-					padding: 24px;
-
-					flex-direction: row;
-
-
-  align-items: center;  
- 
-			
-				}
-
-
-				.fifty-six-percent-section-text-content-box{
-					display: flex;
-
-justify-content: space-between;
-
-flex-direction: column;
-
-height: 83px;
-
-				}
-
-
-				.fifty-six-percent-section-h2{
-					font-weight: var(--tablet-text-preset-font-weight-1);
-        font-size:  var(--tablet-text-preset-font-size-1);
-        letter-spacing:  0.5px;
-        line-height: var(--tablet-text-preset-line-height-1);
-     
-        margin: 0;
-				}
-
-
-				.fifty-six-percent-section-p {
-
-        font-weight: var(--desctop-text-preset-font-weight-4);
-        font-size: var(--desctop-text-preset-font-size-4);
-     
-        letter-spacing: var(--desctop-text-preset-letter-spacing-4);
-        line-height: var(--desctop-text-preset-line-height-4);
-
-        margin: 0;
       }
-
-
-	
-			.fifty-six-percent-section-pic{
-				width: 178.93px;
-				height: 66.58px;
-			}
-
-
-
-
-      }
-
-
-
-
-
-
 
       @media (max-width: 767px) {
         .main-content-container {
           margin: 32px auto 40px;
 
           width: 91.42vw;
-          height: 2506.35px;
+          height: 2534.35px;
 
- 
+          background-color: #fff;
         }
 
         .upper-group {
@@ -745,292 +122,19 @@ height: 83px;
           grid-template-rows: 234.35px 350.5px;
           row-gap: 32px;
         }
-
-        .create-and-schedule-section {
-          grid-row: 1;
-          grid-column: 1/-1;
-
-          padding-top: 32px;
-          padding-bottom: 32px;
-
-          padding-left: clamp(0px, 8.53vw, 32px);
-          padding-right: clamp(0px, 8.53vw, 32px);
-        }
-
-        .create-and-schedule-section-content-box {
-          gap: 24px;
-          width: 275px;
-        }
-
-        .create-and-schedule-section-h2 {
-       
-          font-weight: 500;
-          font-size: clamp(0px, 8.53vw, 32px);
-          letter-spacing: -2%;
-          line-height: clamp(0px, 7.46vw, 28px);
-        }
-
-        .create-and-schedule-section-pic {
-          width: clamp(0px, 52.65vw, 190.47px);
-          height: clamp(0px, 24.09vw, 90.35px);
-        }
-
-        .social-media-section {
-          padding: 40px 32px;
-          gap: 24px;
-        }
-
-        .social-media-section-h2 {
-          font-weight: 400;
-          font-size: var(--mobile-text-preset-font-size-1);
-          letter-spacing: -2px;
-          line-height: var(--mobile-text-preset-line-height-1);
-          text-align: center;
-          margin: 0;
-        }
-
-        .maintain-a-consistent-section {
-          grid-row: 3;
-          grid-column: 1/-1;
-
-          padding-left: 16px;
-          padding-top: 16px;
-          padding-right: 16px;
-        }
-
-        .maintain-a-consistent-section-h2 {
-        
-          font-size: var(--mobile-text-preset-font-size-3);
-
-          font-weight: var(--mobile-text-preset-font-weight-3);
-          letter-spacing: var(--mobile-text-preset-letter-spacing-3);
-
-          line-height: var(--mobile-text-preset-line-height-3);
-
-          padding: 0;
-       
-          margin: 0;
-        }
-
-        .schedule-section {
-          grid-row: 4;
-          grid-column: 1/-1;
-
-          padding: clamp(0px, 8.53vw, 32px) 32px;
-        }
-
-        .schedule-section-content-box {
-          width: 308.06px;
-          height: 404.91px;
-        }
-
-        .schedule-section-pic {
-          width: clamp(0px, 82.14vw, 308.06px);
-          height: clamp(0px, 72.77vw, 272.91px);
-        }
-
-        .schedule-section-h2 {
-          font-weight: var(--mobile-text-preset-font-weight-3);
-          font-size: var(--mobile-text-preset-font-size-3);
-          letter-spacing: var(--mobile-text-preset-letter-spacing-3);
-          line-height: var(--mobile-text-preset-line-height-3);
-        }
-
-        .schedule-section-p {
-          width: 279px;
-        }
-      
-        .grow-followers-section {
-          grid-row: 5;
-          grid-column: 1/-1;
-
-          flex-direction: column;
-
-          padding: 24px 43px;
-          justify-content: space-between;
-        
-        }
-
-        .grow-followers-section-content-box {
-          flex-direction: column;
-          height: 296.22px;
-
-          justify-content: space-between;
-          width: 257px;
-        }
-
-        .grow-followers-section-h2 {
-          font-size: var(--mobile-text-preset-font-size-2);
-          font-weight: var(--mobile-text-preset-font-weight-2);
-          line-height: var(--mobile-text-preset-line-height-2);
-          letter-spacing: var(--mobile-text-preset-letter-spacing-2);
-
-          padding-top: 40px;
-          padding-left: 0;
-          margin: 0;
-          width: 200px;
-          text-align: center;
-        }
-
-
-						.fifty-six-percent-section{
-								
-								grid-row: 6;
-								grid-column: 1/-1;
-					align-items:flex-start;
-
-					flex-direction: column;
-							} 
-
-
-
-
-
-							.fifty-six-percent-section-text-content-box{
-								height: 77px;
-							}
-
-
-
-
-
-
-							.fifty-six-percent-section-h2{
-					font-weight: 500;
-        font-size:  var(--mobile-text-preset-font-size-1);
-        letter-spacing:  0.5px;
-        line-height: var(--mobile-text-preset-line-height-1);
-     
-        margin: 0;
-				}
-
-
-				.fifty-six-percent-section-p {
-
-        font-weight: var(--desctop-text-preset-font-weight-4);
-        font-size: var(--desctop-text-preset-font-size-4);
-     
-        letter-spacing: 0px;
-        line-height: var(--desctop-text-preset-line-height-4);
-
-        margin: 0;
-      }
-
-
-
-
       }
     </style>
   </head>
-
-
   <body>
-    <!-- !!!!!!!!!
-		 !!!!!!!!!!!!!!!!
-		 do hot foget hiden h1 -->
-
     <main class="main-content-container">
-
       <div class="upper-group">
-
-        <section class="social-media-section">
-          <h2 class="social-media-section-h2">
-            Social Media <span style="color: #ffcc6a">10x</span>
-            <span style="font-style: italic">Faster</span> with AI
-          </h2>
-          <div class="social-media-section-reviews-box">
-            <img
-              class="social-media-section-pic"
-              src="./img/review-stars.svg"
-              alt="social media reviews stars"
-            />
-
-            <p class="social-media-section-p">Over 4,000 5-star reviews</p>
-          </div>
-        
-        </section>
-        <!-- <section class="two">2</section> -->
-        <section class="maintain-a-consistent-section">
-          <div class="maintain-a-consistent-section-content-box">
-            <h2 class="maintain-a-consistent-section-h2">
-              Maintain a consistent posting schedule.
-            </h2>
-            <img
-              class="maintain-a-consistent-section-pic"
-              src="./img/maintain-a-consistent-section-pic.svg"
-              alt="Consistent posting schedule"
-            />
-          </div>
-        </section>
-
-        <section class="schedule-section">
-          <div class="schedule-section-content-box">
-            <h2 class="schedule-section-h2">Schedule to social media.</h2>
-            <img
-              class="schedule-section-pic"
-              src="./img/schedule-section-pic.svg"
-              alt="best time to post graph"
-            />
-            <p class="schedule-section-p">
-              Optimize post timings to publish content at the perfect time for
-              your audience.
-            </p>
-          </div>
-        </section>
-
-        <section class="grow-followers-section">
-          <div class="grow-followers-section-content-box">
-            <img
-              class="grow-followers-section-pic"
-              src="./img/grow-followers-section-pic.svg"
-              alt="followers count graph"
-            />
-            <h2 class="grow-followers-section-h2">
-              Grow followers with non-stop content.
-            </h2>
-          </div>
-        </section>
-
-<section class="fifty-six-percent-section">
-
-<div class="fifty-six-percent-section-text-content-box">
-
-	<h2 class="fifty-six-percent-section-h2">>56%</h2>
-
-	<p class="fifty-six-percent-section-p">faster audience growth</p>
-</div>
-
-
-<img class="fifty-six-percent-section-pic" src="./img/fifty-six-percent-section-pic.svg" alt="users avatars">
-
-
-
-
-
-
-
-
-</section>
-
+        <!-- <section class="one">1</section>
+				<section class="two">2</section>
+				<section class="three">3</section>
+				<section class="four">4</section>
+				<section class="five">5</section> -->
       </div>
-
-
       <div class="lower-group">
-        <section class="create-and-schedule-section">
-          <div class="create-and-schedule-section-content-box">
-            <h2 class="create-and-schedule-section-h2">
-              Create and schedule content
-              <span style="color: #7551dc; font-style: italic">quicker.</span>
-            </h2>
-
-            <img
-              class="create-and-schedule-section-pic"
-              src="./img/create-and-schedule-section-pic.svg"
-              alt="Create post button"
-            />
-          </div>
-        </section>
-
         <!-- <section class="six">7</section>
 				<section class="six">8</section> -->
       </div>
