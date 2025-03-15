@@ -35,8 +35,6 @@
         --desctop-text-preset-letter-spacing-4: 0px;
         --desctop-text-preset-line-height-4: 20px;
 
-
-
         --tablet-text-preset-font-weight-1: 500;
         --tablet-text-preset-font-size-1: 54px;
         --tablet-text-preset-letter-spacing-1: -2px;
@@ -52,13 +50,10 @@
         --tablet-text-preset-letter-spacing-3: -1.5px;
         --tablet-text-preset-line-height-3: 26px;
 
-
-
         --mobile-text-preset-font-weight-1: 500;
         --mobile-text-preset-font-size-1: 46px;
         --mobile-text-preset-letter-spacing-1: -2px;
         --mobile-text-preset-line-height-1: 42px;
-
 
         --mobile-text-preset-font-weight-2: 400;
         --mobile-text-preset-font-size-2: 32px;
@@ -91,7 +86,7 @@
         /* height: 881px; */
         /* height: clamp(0px, 61.18vw, 881px); */
 
-        background-color: #ffff;
+        background-color: darkgrey;
 
         display: flex;
         flex-direction: row-reverse;
@@ -176,79 +171,62 @@
         height: clamp(0px, 6.27vw, 90.35px);
       }
 
-
-
-
-
-
-
-
-
-
       .social-media-section {
         background-color: #7551dc;
         grid-column: 1/3;
         grid-row: 1;
 
-				padding: clamp(0px, 4.3056vw, 62px)  clamp(0px, 2.2222vw, 32px);;
+        padding: clamp(0px, 4.3056vw, 62px) clamp(0px, 2.2222vw, 32px);
 
-				display: flex;
-				justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-				flex-direction: column;
-gap: clamp(0px, 1.6667vw,24px);
-				color: white;
+        flex-direction: column;
+        gap: clamp(0px, 1.6667vw, 24px);
+        color: white;
       }
 
-			.social-media-section-h2{
-				font-weight: 400;
-				font-size: clamp(0px, 4.3056vw, 62px);
-				letter-spacing: clamp(-3px, -0.2083vw, 0px);
-				line-height: clamp(0px, 4.0278vw, 58px);
-				text-align: center;
-				margin:  0;
-			}
-
-			.social-media-section-reviews-box{
-				height: clamp(0px, 41.6667vw, 60px);
-
-				display: flex;
-				align-items: center;
-
-				/* justify-content: space-between; */
-				justify-content: center;
-				flex-direction: column;
-
-				gap: clamp(0px, 0.5555vw, 8px);
-			}
-
-			.social-media-section-pic{
-				width: clamp(0px,  13.33333333vw, 192px);
-				height: clamp(0px, 2.22222222vw, 32px);
-			}
-
-			.social-media-section-p{
-	      /* font-weight: var(--desctop-text-preset-font-weight-4); */
-	      font-weight: 250;
-				font-size: clamp(0px, 1.25vw,18px);
-				/* letter-spacing: var(--desctop-text-preset-letter-spacing-4); */
-				letter-spacing: clamp(0px, 0.01736vw, 0.25px);
-				line-height: clamp(0px, 1.3889vw, 20px);
-				/* line-height: 20px; */
-				text-align: center;
-
-			/* padding-top: 8px; */
-				
-	      margin: 0; 
+      .social-media-section-h2 {
+        font-weight: 400;
+        font-size: clamp(0px, 4.3056vw, 62px);
+        letter-spacing: clamp(-3px, -0.2083vw, 0px);
+        line-height: clamp(0px, 4.0278vw, 58px);
+        text-align: center;
+        margin: 0;
       }
 
+      .social-media-section-reviews-box {
+        height: clamp(0px, 41.6667vw, 60px);
 
+        display: flex;
+        align-items: center;
 
+        /* justify-content: space-between; */
+        justify-content: center;
+        flex-direction: column;
 
+        gap: clamp(0px, 0.5555vw, 8px);
+      }
 
+      .social-media-section-pic {
+        width: clamp(0px, 13.33333333vw, 192px);
+        height: clamp(0px, 2.22222222vw, 32px);
+      }
 
+      .social-media-section-p {
+        /* font-weight: var(--desctop-text-preset-font-weight-4); */
+        font-weight: 250;
+        font-size: clamp(0px, 1.25vw, 18px);
+        /* letter-spacing: var(--desctop-text-preset-letter-spacing-4); */
+        letter-spacing: clamp(0px, 0.01736vw, 0.25px);
+        line-height: clamp(0px, 1.3889vw, 20px);
+        /* line-height: 20px; */
+        text-align: center;
 
+        /* padding-top: 8px; */
 
+        margin: 0;
+      }
 
       .maintain-a-consistent-section {
         background-color: #ffcc6a;
@@ -392,10 +370,83 @@ gap: clamp(0px, 1.6667vw,24px);
         padding-left: 11.32px;
       }
 
-      .grow-followers-section-pic {
+			.grow-followers-section-pic {
         width: clamp(0px, 15.81vw, 227.68px);
         height: clamp(0px, 13.9vw, 200.22px);
       }
+
+
+
+
+
+
+
+
+
+
+			.fifty-six-percent-section{
+					background-color: white;
+					grid-row: 3;
+					grid-column: 1/2;
+					
+					padding: clamp(0px, 1.6667vw, 24px);
+					display: flex;
+
+					justify-content: space-between;
+
+					flex-direction: column;
+				}
+
+
+				.fifty-six-percent-section-text-content-box{
+					display: flex;
+
+justify-content: space-between;
+
+flex-direction: column;
+
+height: clamp(0px, 6.4583vw, 93px);
+
+				}
+
+
+				.fifty-six-percent-section-h2{
+					font-weight: 500;
+        font-size: clamp(0px, 4.3056vw, 62px);
+        letter-spacing: clamp(-3px, -0.2083vw, 0px);
+        line-height: clamp(0px, 4.0278vw, 58px);
+     
+        margin: 0;
+				}
+
+
+				.fifty-six-percent-section-p {
+
+        font-weight: 500;
+        font-size: clamp(0px, 1.25vw, 18px);
+     
+        letter-spacing: clamp(0px, 0.01736vw, 0.25px);
+        line-height: clamp(0px, 1.3889vw, 20px);
+
+        margin: 0;
+      }
+
+
+		
+
+
+
+			.fifty-six-percent-section-pic{
+				width: clamp(0px, 12.4257vw, 178.93px);
+				height: clamp(0px, 4.6236vw, 66.58px);
+			}
+
+
+
+
+
+
+     
 
       @media (max-width: 1023px) {
         .main-content-container {
@@ -404,7 +455,7 @@ gap: clamp(0px, 1.6667vw,24px);
           width: 89.584vw;
           height: 1959.31px;
 
-          background-color: #fff;
+    
 
           flex-direction: column;
           gap: 32px;
@@ -451,64 +502,48 @@ gap: clamp(0px, 1.6667vw,24px);
           height: 90.35px;
         }
 
+        .social-media-section {
+          padding: 72px 76px;
+          gap: 24px;
+        }
 
+        .social-media-section-h2 {
+          font-weight: 400;
+          font-size: var(--tablet-text-preset-font-size-1);
+          letter-spacing: -2px;
+          line-height: var(--tablet-text-preset-line-height-1);
+          text-align: center;
+          margin: 0;
+        }
 
+        .social-media-section-reviews-box {
+          height: 60px;
 
-				.social-media-section{
-					padding: 72px 76px;
-					gap: 24px;
-				}
+          display: flex;
+          align-items: center;
 
+          justify-content: center;
+          flex-direction: column;
 
+          gap: 8px;
+        }
 
-				.social-media-section-h2{
-				font-weight: 400;
-				font-size: var(--tablet-text-preset-font-size-1);
-				letter-spacing: -2px;
-				line-height: var(--tablet-text-preset-line-height-1);
-				text-align: center;
-				margin:  0;
-			}
+        .social-media-section-pic {
+          width: 192px;
+          height: 32px;
+        }
 
-			.social-media-section-reviews-box{
-				height: 60px;
+        .social-media-section-p {
+          font-weight: 250;
+          font-size: var(--desctop-text-preset-font-size-4);
 
-				display: flex;
-				align-items: center;
+          letter-spacing: var(--desctop-text-preset-letter-spacing-4);
+          line-height: var(--desctop-text-preset-line-height-4);
 
-	
-				justify-content: center;
-				flex-direction: column;
+          text-align: center;
 
-				gap: 8px;
-			}
-
-
-			.social-media-section-pic{
-				width: 192px;
-				height: 32px;
-			}
-
-
-
-			.social-media-section-p{
-	  
-	      font-weight: 250;
-				font-size: var(--desctop-text-preset-font-size-4);
-			
-				letter-spacing: var(--desctop-text-preset-letter-spacing-4);
-				line-height: var(--desctop-text-preset-line-height-4);
-			
-				text-align: center;
-
-			
-				
-	      margin: 0; 
-      }
-
-
-
-
+          margin: 0;
+        }
 
         .maintain-a-consistent-section {
           padding-left: 24px;
@@ -617,7 +652,75 @@ gap: clamp(0px, 1.6667vw,24px);
           width: 227.68px;
           height: 200.22px;
         }
+
+			
+
+				.fifty-six-percent-section{
+					
+					grid-row: 5;
+					grid-column: 1/-1;
+
+					padding: 24px;
+
+					flex-direction: row;
+
+
+  align-items: center;  
+ 
+			
+				}
+
+
+				.fifty-six-percent-section-text-content-box{
+					display: flex;
+
+justify-content: space-between;
+
+flex-direction: column;
+
+height: 83px;
+
+				}
+
+
+				.fifty-six-percent-section-h2{
+					font-weight: var(--tablet-text-preset-font-weight-1);
+        font-size:  var(--tablet-text-preset-font-size-1);
+        letter-spacing:  0.5px;
+        line-height: var(--tablet-text-preset-line-height-1);
+     
+        margin: 0;
+				}
+
+
+				.fifty-six-percent-section-p {
+
+        font-weight: var(--desctop-text-preset-font-weight-4);
+        font-size: var(--desctop-text-preset-font-size-4);
+     
+        letter-spacing: var(--desctop-text-preset-letter-spacing-4);
+        line-height: var(--desctop-text-preset-line-height-4);
+
+        margin: 0;
       }
+
+
+	
+			.fifty-six-percent-section-pic{
+				width: 178.93px;
+				height: 66.58px;
+			}
+
+
+
+
+      }
+
+
+
+
+
+
 
       @media (max-width: 767px) {
         .main-content-container {
@@ -626,13 +729,12 @@ gap: clamp(0px, 1.6667vw,24px);
           width: 91.42vw;
           height: 2506.35px;
 
-          background-color: #fff;
+ 
         }
 
         .upper-group {
           height: 1885.5px;
 
-          /* grid-template-rows: 290px 162.54px 216.25px 468.91px 344.22px 215.58px; */
           grid-template-rows: 290px 162.54px 216.25px 468.91px 372.22px 215.58px;
           row-gap: 32px;
         }
@@ -644,23 +746,16 @@ gap: clamp(0px, 1.6667vw,24px);
           row-gap: 32px;
         }
 
-
-				.create-and-schedule-section {
-		
-
-					grid-row: 1;
+        .create-and-schedule-section {
+          grid-row: 1;
           grid-column: 1/-1;
 
-					padding-top: 32px;
-padding-bottom: 32px;
+          padding-top: 32px;
+          padding-bottom: 32px;
 
-padding-left: clamp(0px, 8.53vw ,32px);
-padding-right: clamp(0px, 8.53vw ,32px);		
-
-
-				}
-
-   
+          padding-left: clamp(0px, 8.53vw, 32px);
+          padding-right: clamp(0px, 8.53vw, 32px);
+        }
 
         .create-and-schedule-section-content-box {
           gap: 24px;
@@ -668,50 +763,31 @@ padding-right: clamp(0px, 8.53vw ,32px);
         }
 
         .create-and-schedule-section-h2 {
-          /* font-weight: var(--mobile-text-preset-font-weight-2); */
+       
           font-weight: 500;
-          font-size: clamp(0px, 8.53vw ,32px);;
+          font-size: clamp(0px, 8.53vw, 32px);
           letter-spacing: -2%;
           line-height: clamp(0px, 7.46vw, 28px);
         }
 
-        .create-and-schedule-section-pic{
-				width: clamp(0px, 52.65vw,190.47px);
-				height:  clamp(0px, 24.09vw, 90.35px);
+        .create-and-schedule-section-pic {
+          width: clamp(0px, 52.65vw, 190.47px);
+          height: clamp(0px, 24.09vw, 90.35px);
+        }
 
-			}
+        .social-media-section {
+          padding: 40px 32px;
+          gap: 24px;
+        }
 
-
-
-
-
-			.social-media-section{
-					padding: 40px 32px;
-					gap: 24px;
-				}
-
-
-
-
-				.social-media-section-h2{
-				font-weight: 400;
-				font-size: var(--mobile-text-preset-font-size-1);
-				letter-spacing: -2px;
-				line-height: var(--mobile-text-preset-line-height-1);
-				text-align: center;
-				margin:  0;
-			}
-
-
-
-
-
-
-
-
-
-
-
+        .social-media-section-h2 {
+          font-weight: 400;
+          font-size: var(--mobile-text-preset-font-size-1);
+          letter-spacing: -2px;
+          line-height: var(--mobile-text-preset-line-height-1);
+          text-align: center;
+          margin: 0;
+        }
 
         .maintain-a-consistent-section {
           grid-row: 3;
@@ -722,26 +798,19 @@ padding-right: clamp(0px, 8.53vw ,32px);
           padding-right: 16px;
         }
 
-
-
-
         .maintain-a-consistent-section-h2 {
-          /* font-size: var(--desctop-text-preset-font-size-3); */
+        
           font-size: var(--mobile-text-preset-font-size-3);
 
           font-weight: var(--mobile-text-preset-font-weight-3);
           letter-spacing: var(--mobile-text-preset-letter-spacing-3);
 
-          /* line-height: var(--desctop-text-preset-line-height-3); */
           line-height: var(--mobile-text-preset-line-height-3);
 
           padding: 0;
-          /* background-color: #fff; */
-          /* width: 251px; */
+       
           margin: 0;
         }
-
-
 
         .schedule-section {
           grid-row: 4;
@@ -756,10 +825,10 @@ padding-right: clamp(0px, 8.53vw ,32px);
         }
 
         .schedule-section-pic {
-          width: clamp(0px, 82.14vw,308.06px);
+          width: clamp(0px, 82.14vw, 308.06px);
           height: clamp(0px, 72.77vw, 272.91px);
         }
- 
+
         .schedule-section-h2 {
           font-weight: var(--mobile-text-preset-font-weight-3);
           font-size: var(--mobile-text-preset-font-size-3);
@@ -770,11 +839,7 @@ padding-right: clamp(0px, 8.53vw ,32px);
         .schedule-section-p {
           width: 279px;
         }
-        /* --mobile-text-preset-font-weight-3: 500;
-        --mobile-text-preset-font-size-3: 26px;
-        --mobile-text-preset-letter-spacing-3: -1.7px;
-        --mobile-text-preset-line-height-3: 24px; */
-
+      
         .grow-followers-section {
           grid-row: 5;
           grid-column: 1/-1;
@@ -783,7 +848,7 @@ padding-right: clamp(0px, 8.53vw ,32px);
 
           padding: 24px 43px;
           justify-content: space-between;
-          /* align-items: center; */
+        
         }
 
         .grow-followers-section-content-box {
@@ -806,43 +871,84 @@ padding-right: clamp(0px, 8.53vw ,32px);
           width: 200px;
           text-align: center;
         }
+
+
+						.fifty-six-percent-section{
+								
+								grid-row: 6;
+								grid-column: 1/-1;
+					align-items:flex-start;
+
+					flex-direction: column;
+							} 
+
+
+
+
+
+							.fifty-six-percent-section-text-content-box{
+								height: 77px;
+							}
+
+
+
+
+
+
+							.fifty-six-percent-section-h2{
+					font-weight: 500;
+        font-size:  var(--mobile-text-preset-font-size-1);
+        letter-spacing:  0.5px;
+        line-height: var(--mobile-text-preset-line-height-1);
+     
+        margin: 0;
+				}
+
+
+				.fifty-six-percent-section-p {
+
+        font-weight: var(--desctop-text-preset-font-weight-4);
+        font-size: var(--desctop-text-preset-font-size-4);
+     
+        letter-spacing: 0px;
+        line-height: var(--desctop-text-preset-line-height-4);
+
+        margin: 0;
       }
 
-      /* @media (max-width: 374px) {
-        .create-and-schedule-section {
-          padding-left: 16px;
-        }
-      } */
+
+
+
+      }
     </style>
   </head>
+
+
   <body>
     <!-- !!!!!!!!!
 		 !!!!!!!!!!!!!!!!
 		 do hot foget hiden h1 -->
 
     <main class="main-content-container">
+
       <div class="upper-group">
 
-
-
-
         <section class="social-media-section">
-					<h2 class="social-media-section-h2">Social Media <span style="color:#ffcc6a">10x</span> <span style="font-style: italic;">Faster</span> with AI</h2>
-					<div class="social-media-section-reviews-box">
-					<img class='social-media-section-pic' src="./img/review-stars.svg" alt="social media reviews stars">
+          <h2 class="social-media-section-h2">
+            Social Media <span style="color: #ffcc6a">10x</span>
+            <span style="font-style: italic">Faster</span> with AI
+          </h2>
+          <div class="social-media-section-reviews-box">
+            <img
+              class="social-media-section-pic"
+              src="./img/review-stars.svg"
+              alt="social media reviews stars"
+            />
 
-					<p class="social-media-section-p">Over 4,000 5-star reviews</p>
-					</div>
-<!-- <div class="social-media-section-content-box">
-
-<h2 class="social-media-section-h2">Social Media <span style="color:#ffcc6a">10x</span> <span style="font-style: italic;">Faster</span> with AI</h2>
-	<div class="social-media-section-reviews-box">
-		<img class='social-media-section-pic' src="./img/review-stars.svg" alt="social media reviews stars">
-		<p class="social-media-section-p">Over 4,000 5-star reviews</p>
-	</div>
-</div> -->
-
-				</section>
+            <p class="social-media-section-p">Over 4,000 5-star reviews</p>
+          </div>
+        
+        </section>
         <!-- <section class="two">2</section> -->
         <section class="maintain-a-consistent-section">
           <div class="maintain-a-consistent-section-content-box">
@@ -884,7 +990,30 @@ padding-right: clamp(0px, 8.53vw ,32px);
             </h2>
           </div>
         </section>
+
+<section class="fifty-six-percent-section">
+
+<div class="fifty-six-percent-section-text-content-box">
+
+	<h2 class="fifty-six-percent-section-h2">>56%</h2>
+
+	<p class="fifty-six-percent-section-p">faster audience growth</p>
+</div>
+
+
+<img class="fifty-six-percent-section-pic" src="./img/fifty-six-percent-section-pic.svg" alt="users avatars">
+
+
+
+
+
+
+
+
+</section>
+
       </div>
+
 
       <div class="lower-group">
         <section class="create-and-schedule-section">
