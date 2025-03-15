@@ -15,20 +15,55 @@
 
     <style>
       :root {
+        --desctop-text-preset-font-weight-1: 500;
+        --desctop-text-preset-font-size-1: 62px;
+        --desctop-text-preset-letter-spacing-1: -1.7px;
+        --desctop-text-preset-line-height-1: 58px;
+
         --desctop-text-preset-font-weight-2: 400;
         --desctop-text-preset-font-size-2: 40px;
         --desctop-text-preset-letter-spacing-2: -1.7px;
         --desctop-text-preset-line-height-2: 36px;
+
+        --desctop-text-preset-font-weight-3: 500;
+        --desctop-text-preset-font-size-3: 32px;
+        --desctop-text-preset-letter-spacing-3: -2px;
+        --desctop-text-preset-line-height-3: 28px;
+
+        --desctop-text-preset-font-weight-4: 400;
+        --desctop-text-preset-font-size-4: 18px;
+        --desctop-text-preset-letter-spacing-4: 0px;
+        --desctop-text-preset-line-height-4: 20px;
+
+        --tablet-text-preset-font-weight-1: 500;
+        --tablet-text-preset-font-size-1: 54px;
+        --tablet-text-preset-letter-spacing-1: -2px;
+        --tablet-text-preset-line-height-1: 48px;
 
         --tablet-text-preset-font-weight-2: 400;
         --tablet-text-preset-font-size-2: 36px;
         --tablet-text-preset-letter-spacing-2: -1.8px;
         --tablet-text-preset-line-height-2: 30px;
 
+        --tablet-text-preset-font-weight-3: 400;
+        --tablet-text-preset-font-size-3: 28px;
+        --tablet-text-preset-letter-spacing-3: -1.5px;
+        --tablet-text-preset-line-height-3: 26px;
+
+        --mobile-text-preset-font-weight-1: 500;
+        --mobile-text-preset-font-size-1: 46px;
+        --mobile-text-preset-letter-spacing-1: -2px;
+        --mobile-text-preset-line-height-1: 42px;
+
         --mobile-text-preset-font-weight-2: 400;
         --mobile-text-preset-font-size-2: 32px;
         --mobile-text-preset-letter-spacing-2: -1.7px;
         --mobile-text-preset-line-height-2: 28px;
+
+        --mobile-text-preset-font-weight-3: 500;
+        --mobile-text-preset-font-size-3: 26px;
+        --mobile-text-preset-letter-spacing-3: -1.7px;
+        --mobile-text-preset-line-height-3: 24px;
       }
 
       * {
@@ -47,13 +82,17 @@
 
         max-width: 1120px;
         width: 77.778vw;
-        height: 881px;
 
-        background-color: #ffff;
+        /* height: 881px; */
+        /* height: clamp(0px, 61.18vw, 881px); */
+
+        background-color: darkgrey;
 
         display: flex;
         flex-direction: row-reverse;
-        gap: 32px;
+
+        /* gap: 32px; */
+        gap: clamp(0px, 2.22vw, 32px);
       }
 
       .upper-group,
@@ -62,17 +101,22 @@
       }
 
       .upper-group {
-        /* background-color: red; */
         background-color: rgb(231, 222, 222);
         width: 74.286%;
 
         display: grid;
 
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 32px;
+        column-gap: clamp(0px, 2.22vw, 32px);
 
-        grid-template-rows: 324px 247px 246px;
-        row-gap: 32px;
+        /* grid-template-rows: 324px 247px 246px; */
+        grid-template-rows: clamp(0px, 22.5vw, 324px) clamp(0px, 17.15vw, 247px) clamp(
+            0px,
+            17.08vw,
+            246px
+          );
+
+        row-gap: clamp(0px, 2.22vw, 32px);
       }
 
       .lower-group {
@@ -81,49 +125,23 @@
 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 415px 434px;
-        row-gap: 32px;
+
+        /* grid-template-rows: 415px 434px; */
+        grid-template-rows: clamp(0px, 28.82vw, 415px) clamp(
+            0px,
+            30.14vw,
+            434px
+          );
+        /* grid-template-rows: clamp(0px, 28.82vw, 415px) 1fr; */
+        row-gap: clamp(0px, 2.22vw, 32px);
       }
 
       section {
         border-radius: 10px;
       }
 
-      .grow-followers-section {
-        grid-row: 3;
-        grid-column: 2/-1;
-
-        background-color: #7551dc;
-
-        padding: 22.89px 24px;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-				justify-content: center;
-
-
-      }
-
-.test-box{
-	        display: flex;
-        flex-direction: row;
-        align-items: center;
-				height: 200.22px;
-}
-
-      .grow-followers-section-h2 {
-        color: #ffff;
-
-        font-weight: var(--desctop-text-preset-font-weight-2);
-        font-size: clamp(0px, 2.8vw, 40px);
-        line-height: clamp(20px, 2.52vw, 36px);
-        letter-spacing: var(--desctop-text-preset-letter-spacing-2);
-
-        /* width: clamp(0px, 17.85vw, 257px); */
-
-        padding-left: 11.32px;
-      }
+     
+     
 
       @media (max-width: 1023px) {
         .main-content-container {
@@ -132,10 +150,10 @@
           width: 89.584vw;
           height: 1959.31px;
 
-          background-color: #fff;
+    
 
           flex-direction: column;
-   
+          gap: 32px;
         }
 
         .upper-group,
@@ -157,46 +175,24 @@
           grid-template-rows: 354.5px;
         }
 
-        .grow-followers-section {
-          grid-row: 4;
-          grid-column: 1/-1;
-          justify-content: center;
-					/* justify-content: space-between; */
-          padding: 22.89px 81.66px;
-          /* padding: 22.89px 0; */
-        }
-				.test-box{
-					/* justify-content: center; */
-					/* width: 524.68px; */
-					width: 524.68px;
-				
-				}
-        .grow-followers-section-h2 {
-          font-size: var(--tablet-text-preset-font-size-2);
-          font-weight: var(--tablet-text-preset-font-weight-2);
-          line-height: var(--tablet-text-preset-line-height-2);
-          letter-spacing: var(--tablet-text-preset-letter-spacing-2);
-          width: 257px;
-          /* width: 268px; */
-          padding-left: 40px;
-        }
-      }
+      
+
+			}
 
       @media (max-width: 767px) {
         .main-content-container {
           margin: 32px auto 40px;
-          /* margin: 0 auto; */
 
           width: 91.42vw;
           height: 2506.35px;
 
-          background-color: #fff;
+ 
         }
 
         .upper-group {
           height: 1885.5px;
 
-          grid-template-rows: 290px 162.54px 216.25px 468.91px 344.22px 215.58px;
+          grid-template-rows: 290px 162.54px 216.25px 468.91px 372.22px 215.58px;
           row-gap: 32px;
         }
 
@@ -207,69 +203,26 @@
           row-gap: 32px;
         }
 
-        .grow-followers-section {
-          grid-row: 5;
-          grid-column: 1/-1;
-
-          flex-direction: column;
-
-          padding: 24px 43px;
-          justify-content: space-between;
-          /* justify-content: center; */
-        }
-
-				.test-box{
-					flex-direction: column;
-			height: 296.22px;
-			/* height: auto; */
-			justify-content: space-between;
-			width: 257px;
-				}
-
-        .grow-followers-section-h2 {
-          font-size: var(--mobile-text-preset-font-size-2);
-          font-weight: var(--mobile-text-preset-font-weight-2);
-          line-height: var(--mobile-text-preset-line-height-2);
-          letter-spacing: var(--mobile-text-preset-letter-spacing-2);
-
-          padding: 0;
-          margin: 0;
-
-          text-align: center;
-        }
-      }
+			}
     </style>
   </head>
+
+
   <body>
     <!-- !!!!!!!!!
 		 !!!!!!!!!!!!!!!!
 		 do hot foget hiden h1 -->
 
     <main class="main-content-container">
+
       <div class="upper-group">
-        <!-- <section class="one">1</section> -->
-        <!-- <section class="two">2</section> -->
-        <!-- <section class="three">3</section> -->
-        <!-- <section class="four">4</section> -->
-        <section class="grow-followers-section">
-					<div class="test-box">
 
-						<img
-							style="width: 227.68px; height: 200.22px"
-							src="./img/grow-followers-section-pic.svg"
-							alt="followers count graph"
-						/>
-						<h2 class="grow-followers-section-h2">
-							Grow followers with non-stop content.
-						</h2>
-
-
-					</div>
-        </section>
+       
       </div>
+
+
       <div class="lower-group">
-        <!-- <section class="six">7</section>
-				<section class="six">8</section> -->
+      
       </div>
     </main>
   </body>
