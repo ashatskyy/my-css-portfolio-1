@@ -250,13 +250,13 @@
 
       .maintain-a-consistent-section-h2 {
         /* font-size: var(--desctop-text-preset-font-size-3); */
-        font-size: clamp(0px, 2.2vw, 32px);
+        font-size: clamp(0px, 2.2222vw, 32px);
 
         font-weight: var(--desctop-text-preset-font-weight-3);
         letter-spacing: var(--desctop-text-preset-letter-spacing-3);
 
         /* line-height: var(--desctop-text-preset-line-height-3); */
-        line-height: clamp(0px, 1.97vw, 28px);
+        line-height: clamp(0px, 1.9444vw, 28px);
 
         padding: 0;
 
@@ -370,83 +370,116 @@
         padding-left: 11.32px;
       }
 
-			.grow-followers-section-pic {
+      .grow-followers-section-pic {
         width: clamp(0px, 15.81vw, 227.68px);
         height: clamp(0px, 13.9vw, 200.22px);
       }
 
+      .fifty-six-percent-section {
+        background-color: white;
+        grid-row: 3;
+        grid-column: 1/2;
 
+        padding: clamp(0px, 1.6667vw, 24px);
+        display: flex;
 
+        justify-content: space-between;
 
+        flex-direction: column;
+      }
 
+      .fifty-six-percent-section-text-content-box {
+        display: flex;
 
+        justify-content: space-between;
 
+        flex-direction: column;
 
+        height: clamp(0px, 6.4583vw, 93px);
+      }
 
-
-			.fifty-six-percent-section{
-					background-color: white;
-					grid-row: 3;
-					grid-column: 1/2;
-					
-					padding: clamp(0px, 1.6667vw, 24px);
-					display: flex;
-
-					justify-content: space-between;
-
-					flex-direction: column;
-				}
-
-
-				.fifty-six-percent-section-text-content-box{
-					display: flex;
-
-justify-content: space-between;
-
-flex-direction: column;
-
-height: clamp(0px, 6.4583vw, 93px);
-
-				}
-
-
-				.fifty-six-percent-section-h2{
-					font-weight: 500;
+      .fifty-six-percent-section-h2 {
+        font-weight: 500;
         font-size: clamp(0px, 4.3056vw, 62px);
         letter-spacing: clamp(-3px, -0.2083vw, 0px);
         line-height: clamp(0px, 4.0278vw, 58px);
-     
+
         margin: 0;
-				}
+      }
 
-
-				.fifty-six-percent-section-p {
-
+      .fifty-six-percent-section-p {
         font-weight: 500;
         font-size: clamp(0px, 1.25vw, 18px);
-     
+
         letter-spacing: clamp(0px, 0.01736vw, 0.25px);
         line-height: clamp(0px, 1.3889vw, 20px);
 
         margin: 0;
       }
 
+      .fifty-six-percent-section-pic {
+        width: clamp(0px, 12.4257vw, 178.93px);
+        height: clamp(0px, 4.6236vw, 66.58px);
+      }
+
+
+
+
+
+
+
+
+
+
+			
+			.manage-multiple-section{
+				background-color: white;
+        grid-row: 2;
+        grid-column: 1/2;
+
+
+
+				width: auto;
+        height: auto;
+        overflow: hidden;
+
+position: relative;
+			}
+
+			.manage-multiple-section-pic{
+margin-top: clamp(0px, 0.5556vw, 8px);
+margin-left: clamp(0px, 0.5556vw, 8px);
+position: absolute;
+
+width: clamp(0px, 23.8194vw, 343px);
+				height: clamp(0px, 8.0556vw, 116px);
+			}
+
+			.manage-multiple-section-h2{
+
+				font-size: clamp(0px, 2.2222vw, 32px);
+
+font-weight: var(--desctop-text-preset-font-weight-3);
+letter-spacing: clamp(-2px, -0.1389vw, 0px);
+/* letter-spacing: -2px; */
+
+
+line-height: clamp(0px, 1.9444vw, 28px);
+
+
+				margin-top: clamp(0px, 7.7083vw, 111px);
+				margin-left: clamp(0px, 1.6666vw,24px);
+				margin-right: clamp(0px, 2.3611vw, 34px);
+			}
 
 		
 
 
 
-			.fifty-six-percent-section-pic{
-				width: clamp(0px, 12.4257vw, 178.93px);
-				height: clamp(0px, 4.6236vw, 66.58px);
-			}
 
 
 
 
-
-
-     
 
       @media (max-width: 1023px) {
         .main-content-container {
@@ -454,8 +487,6 @@ height: clamp(0px, 6.4583vw, 93px);
 
           width: 89.584vw;
           height: 1959.31px;
-
-    
 
           flex-direction: column;
           gap: 32px;
@@ -653,74 +684,92 @@ height: clamp(0px, 6.4583vw, 93px);
           height: 200.22px;
         }
 
+        .fifty-six-percent-section {
+          grid-row: 5;
+          grid-column: 1/-1;
+
+          padding: 24px;
+
+          flex-direction: row;
+
+          align-items: center;
+        }
+
+        .fifty-six-percent-section-text-content-box {
+          display: flex;
+
+          justify-content: space-between;
+
+          flex-direction: column;
+
+          height: 83px;
+        }
+
+        .fifty-six-percent-section-h2 {
+          font-weight: var(--tablet-text-preset-font-weight-1);
+          font-size: var(--tablet-text-preset-font-size-1);
+          letter-spacing: 0.5px;
+          line-height: var(--tablet-text-preset-line-height-1);
+
+          margin: 0;
+        }
+
+        .fifty-six-percent-section-p {
+          font-weight: var(--desctop-text-preset-font-weight-4);
+          font-size: var(--desctop-text-preset-font-size-4);
+
+          letter-spacing: var(--desctop-text-preset-letter-spacing-4);
+          line-height: var(--desctop-text-preset-line-height-4);
+
+          margin: 0;
+        }
+
+        .fifty-six-percent-section-pic {
+          width: 178.93px;
+          height: 66.58px;
+        }
+
+
+
+				
+
+				.manage-multiple-section{
 			
-
-				.fifty-six-percent-section{
-					
-					grid-row: 5;
-					grid-column: 1/-1;
-
-					padding: 24px;
-
-					flex-direction: row;
-
-
-  align-items: center;  
- 
-			
-				}
-
-
-				.fifty-six-percent-section-text-content-box{
-					display: flex;
-
-justify-content: space-between;
-
-flex-direction: column;
-
-height: 83px;
-
-				}
-
-
-				.fifty-six-percent-section-h2{
-					font-weight: var(--tablet-text-preset-font-weight-1);
-        font-size:  var(--tablet-text-preset-font-size-1);
-        letter-spacing:  0.5px;
-        line-height: var(--tablet-text-preset-line-height-1);
-     
-        margin: 0;
-				}
-
-
-				.fifty-six-percent-section-p {
-
-        font-weight: var(--desctop-text-preset-font-weight-4);
-        font-size: var(--desctop-text-preset-font-size-4);
-     
-        letter-spacing: var(--desctop-text-preset-letter-spacing-4);
-        line-height: var(--desctop-text-preset-line-height-4);
-
-        margin: 0;
-      }
-
-
-	
-			.fifty-six-percent-section-pic{
-				width: 178.93px;
-				height: 66.58px;
+        grid-row: 2;
+        grid-column: 1/2;
 			}
 
 
+			.manage-multiple-section-pic{
+margin-top: 8px;
+margin-left: 8px;
+
+
+width: 343px;
+				height: 116px;
+			}
+
+			.manage-multiple-section-h2{
+
+				font-size: var(--tablet-text-preset-font-size-3);
+
+font-weight: 550;
+letter-spacing: var(--tablet-text-preset-letter-spacing-3);
+
+line-height: var(--tablet-text-preset-line-height-3);
+
+
+margin-top: 145px;
+margin-left: 24px;
+/* margin-right: 104px; */
+margin-right: clamp(104px, 13.5417vw, 154px);
+/* margin-right: clamp(114px, 14.84vw, 154px); */
+/* margin-right: clamp(84px, 14.84vw, 154px); */
+
+}
 
 
       }
-
-
-
-
-
-
 
       @media (max-width: 767px) {
         .main-content-container {
@@ -728,8 +777,6 @@ height: 83px;
 
           width: 91.42vw;
           height: 2506.35px;
-
- 
         }
 
         .upper-group {
@@ -763,7 +810,6 @@ height: 83px;
         }
 
         .create-and-schedule-section-h2 {
-       
           font-weight: 500;
           font-size: clamp(0px, 8.53vw, 32px);
           letter-spacing: -2%;
@@ -799,7 +845,6 @@ height: 83px;
         }
 
         .maintain-a-consistent-section-h2 {
-        
           font-size: var(--mobile-text-preset-font-size-3);
 
           font-weight: var(--mobile-text-preset-font-weight-3);
@@ -808,7 +853,7 @@ height: 83px;
           line-height: var(--mobile-text-preset-line-height-3);
 
           padding: 0;
-       
+
           margin: 0;
         }
 
@@ -839,7 +884,7 @@ height: 83px;
         .schedule-section-p {
           width: 279px;
         }
-      
+
         .grow-followers-section {
           grid-row: 5;
           grid-column: 1/-1;
@@ -848,7 +893,6 @@ height: 83px;
 
           padding: 24px 43px;
           justify-content: space-between;
-        
         }
 
         .grow-followers-section-content-box {
@@ -872,49 +916,62 @@ height: 83px;
           text-align: center;
         }
 
+        .fifty-six-percent-section {
+          grid-row: 6;
+          grid-column: 1/-1;
+          align-items: flex-start;
 
-						.fifty-six-percent-section{
-								
-								grid-row: 6;
-								grid-column: 1/-1;
-					align-items:flex-start;
+          flex-direction: column;
+        }
 
-					flex-direction: column;
-							} 
+        .fifty-six-percent-section-text-content-box {
+          height: 77px;
+        }
+
+        .fifty-six-percent-section-h2 {
+          font-weight: 500;
+          font-size: var(--mobile-text-preset-font-size-1);
+          letter-spacing: 0.5px;
+          line-height: var(--mobile-text-preset-line-height-1);
+
+          margin: 0;
+        }
+
+        .fifty-six-percent-section-p {
+          font-weight: var(--desctop-text-preset-font-weight-4);
+          font-size: var(--desctop-text-preset-font-size-4);
+
+          letter-spacing: 0px;
+          line-height: var(--desctop-text-preset-line-height-4);
+
+          margin: 0;
+        }
+
+				.manage-multiple-section{
+			
+			grid-row: 2;
+			grid-column: 1/-1;
+		}
+		.manage-multiple-section-pic{
+			margin: 0;
+		}
+		.manage-multiple-section-h2{
+
+			font-size: var(--mobile-text-preset-font-size-3);
+
+font-weight: var(--mobile-text-preset-font-weight-3);
+letter-spacing: var(--mobile-text-preset-letter-spacing-3);
+
+line-height: var(--mobile-text-preset-line-height-3);
 
 
+margin-top: 98.54px;
+margin-left: 16px;
+
+margin-right: 16px;
 
 
-
-							.fifty-six-percent-section-text-content-box{
-								height: 77px;
-							}
-
-
-
-
-
-
-							.fifty-six-percent-section-h2{
-					font-weight: 500;
-        font-size:  var(--mobile-text-preset-font-size-1);
-        letter-spacing:  0.5px;
-        line-height: var(--mobile-text-preset-line-height-1);
-     
-        margin: 0;
-				}
-
-
-				.fifty-six-percent-section-p {
-
-        font-weight: var(--desctop-text-preset-font-weight-4);
-        font-size: var(--desctop-text-preset-font-size-4);
-     
-        letter-spacing: 0px;
-        line-height: var(--desctop-text-preset-line-height-4);
-
-        margin: 0;
-      }
+}
 
 
 
@@ -923,16 +980,13 @@ height: 83px;
     </style>
   </head>
 
-
   <body>
     <!-- !!!!!!!!!
 		 !!!!!!!!!!!!!!!!
 		 do hot foget hiden h1 -->
 
     <main class="main-content-container">
-
       <div class="upper-group">
-
         <section class="social-media-section">
           <h2 class="social-media-section-h2">
             Social Media <span style="color: #ffcc6a">10x</span>
@@ -947,7 +1001,6 @@ height: 83px;
 
             <p class="social-media-section-p">Over 4,000 5-star reviews</p>
           </div>
-        
         </section>
         <!-- <section class="two">2</section> -->
         <section class="maintain-a-consistent-section">
@@ -991,29 +1044,32 @@ height: 83px;
           </div>
         </section>
 
-<section class="fifty-six-percent-section">
+        <section class="fifty-six-percent-section">
+          <div class="fifty-six-percent-section-text-content-box">
+            <h2 class="fifty-six-percent-section-h2">>56%</h2>
 
-<div class="fifty-six-percent-section-text-content-box">
+            <p class="fifty-six-percent-section-p">faster audience growth</p>
+          </div>
 
-	<h2 class="fifty-six-percent-section-h2">>56%</h2>
+          <img
+            class="fifty-six-percent-section-pic"
+            src="./img/fifty-six-percent-section-pic.svg"
+            alt="users avatars picture"
+          />
+        </section>
 
-	<p class="fifty-six-percent-section-p">faster audience growth</p>
-</div>
-
-
-<img class="fifty-six-percent-section-pic" src="./img/fifty-six-percent-section-pic.svg" alt="users avatars">
-
-
-
-
-
-
+        <section class="manage-multiple-section">
 
 
-</section>
+<img class="manage-multiple-section-pic" src="./img/manage-multiple-section.svg" alt="multiple accounts picture">
 
+<h2 class="manage-multiple-section-h2">Manage multiple accounts and platforms.</h2>
+
+
+
+
+				</section>
       </div>
-
 
       <div class="lower-group">
         <section class="create-and-schedule-section">
