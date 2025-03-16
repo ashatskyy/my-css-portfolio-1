@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
 
-    <title>AwesomeME</title>
+    <title>Bento grid portfolio work by Shatskyi.O</title>
 
     <style>
       :root {
@@ -83,25 +83,27 @@
         max-width: 1120px;
         width: 77.778vw;
 
-        /* height: 881px; */
-        /* height: clamp(0px, 61.18vw, 881px); */
-
-        /* background-color: darkgrey; */
-
         display: flex;
         flex-direction: row-reverse;
 
-        /* gap: 32px; */
         gap: clamp(0px, 2.22vw, 32px);
       }
-
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
       .upper-group,
       .lower-group {
         height: 100%;
       }
 
       .upper-group {
-        /* background-color: rgb(231, 222, 222); */
         width: 74.286%;
 
         display: grid;
@@ -109,7 +111,6 @@
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: clamp(0px, 2.22vw, 32px);
 
-        /* grid-template-rows: 324px 247px 246px; */
         grid-template-rows: clamp(0px, 22.5vw, 324px) clamp(0px, 17.15vw, 247px) clamp(
             0px,
             17.08vw,
@@ -120,19 +121,17 @@
       }
 
       .lower-group {
-        /* background-color: rgb(152, 233, 152); */
         width: 22.85%;
 
         display: grid;
         grid-template-columns: 1fr;
 
-        /* grid-template-rows: 415px 434px; */
         grid-template-rows: clamp(0px, 28.82vw, 415px) clamp(
             0px,
             30.14vw,
             434px
           );
-        /* grid-template-rows: clamp(0px, 28.82vw, 415px) 1fr; */
+
         row-gap: clamp(0px, 2.22vw, 32px);
       }
 
@@ -158,11 +157,9 @@
         font-size: clamp(0px, 2.8vw, 40px);
         line-height: clamp(20px, 2.52vw, 36px);
 
-        /* font-weight: var(--desctop-text-preset-font-weight-2); */
         font-weight: 500;
-        /* font-size: var(--desctop-text-preset-font-size-2); */
+
         letter-spacing: -2.5px;
-        /* line-height: var(--desctop-text-preset-line-height-2); */
 
         margin: 0;
         padding: 0;
@@ -173,9 +170,6 @@
         height: clamp(0px, 6.27vw, 90.35px);
       }
 
-
-
-
       .write-your-content-section {
         grid-row: 2;
         grid-column: 1;
@@ -185,41 +179,27 @@
         padding-bottom: clamp(0px, 1.6667vw, 24px);
 
         background-color: #ffcc6a;
-        /* grid-row: 2; */
 
-				display: flex;
-				flex-direction: column;
+        display: flex;
+        flex-direction: column;
 
-				justify-content: space-between;
+        justify-content: space-between;
       }
 
       .write-your-content-section-h2 {
+        font-weight: 550;
+        font-size: clamp(0px, 2.778vw, 40px);
+        line-height: clamp(0px, 2.5vw, 36px);
 
-				font-weight: 550;
-				font-size: clamp(0px, 2.778vw, 40px);
-				line-height: clamp(0px, 2.5vw, 36px);
-				/* letter-spacing: -2.7px; */
-				letter-spacing: clamp(-2.7px, -0.1875vw, 0px);
-				margin: 0;
-				margin-right: clamp(0px, 2.3611vw, 34px);
+        letter-spacing: clamp(-2.7px, -0.1875vw, 0px);
+        margin: 0;
+        margin-right: clamp(0px, 2.3611vw, 34px);
       }
 
-      .write-your-content-section-pic{
-      width: clamp(0px, 15.2743vw, 219.95px); 
-       height: clamp(0px, 15.4514vw, 222.5px);
+      .write-your-content-section-pic {
+        width: clamp(0px, 15.2743vw, 219.95px);
+        height: clamp(0px, 15.4514vw, 222.5px);
       }
-
-
-
-
-
-
-
-
-
-
-
-
 
       .social-media-section {
         background-color: #7551dc;
@@ -251,7 +231,6 @@
         display: flex;
         align-items: center;
 
-        /* justify-content: space-between; */
         justify-content: center;
         flex-direction: column;
 
@@ -259,21 +238,18 @@
       }
 
       .social-media-section-pic {
-        width: clamp(0px, 13.33333333vw, 192px);
-        height: clamp(0px, 2.22222222vw, 32px);
+        width: clamp(0px, 13.3333vw, 192px);
+        height: clamp(0px, 2.2222vw, 32px);
       }
 
       .social-media-section-p {
-        /* font-weight: var(--desctop-text-preset-font-weight-4); */
         font-weight: 250;
         font-size: clamp(0px, 1.25vw, 18px);
-        /* letter-spacing: var(--desctop-text-preset-letter-spacing-4); */
+
         letter-spacing: clamp(0.25px, 0.01736vw, 0px);
         line-height: clamp(0px, 1.3889vw, 20px);
-        /* line-height: 20px; */
-        text-align: center;
 
-        /* padding-top: 8px; */
+        text-align: center;
 
         margin: 0;
       }
@@ -299,13 +275,11 @@
       }
 
       .maintain-a-consistent-section-h2 {
-        /* font-size: var(--desctop-text-preset-font-size-3); */
         font-weight: 500;
-				
-        font-size: clamp(0px, 2.2222vw, 32px);
-        letter-spacing: clamp(-2.7px, -0.1875vw,0px);
 
-        /* line-height: var(--desctop-text-preset-line-height-3); */
+        font-size: clamp(0px, 2.2222vw, 32px);
+        letter-spacing: clamp(-2.7px, -0.1875vw, 0px);
+
         line-height: clamp(0px, 1.9444vw, 28px);
 
         padding: 0;
@@ -315,7 +289,6 @@
       }
 
       .maintain-a-consistent-section-pic {
-        /* padding-top: 16px; */
         width: clamp(0px, 14.44vw, 208px);
         height: clamp(0px, 10.9vw, 157px);
       }
@@ -335,19 +308,9 @@
       }
 
       .schedule-section-content-box {
-        /* background-color: #fff; */
-
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
       }
-
-      /* .schedule-section-content-box {
-        display: flex;
-        flex-direction: column;
-
-        justify-content: center;
-      } */
 
       .schedule-section-pic {
         width: clamp(0px, 24.81vw, 357.3px);
@@ -355,35 +318,30 @@
       }
 
       .schedule-section-h2 {
-        /* font-size: var(--desctop-text-preset-font-size-3); */
         font-size: clamp(0px, 2.2vw, 32px);
 
         font-weight: var(--desctop-text-preset-font-weight-3);
         letter-spacing: var(--desctop-text-preset-letter-spacing-3);
 
-        /* line-height: var(--desctop-text-preset-line-height-3); */
         line-height: clamp(0px, 1.97vw, 28px);
 
         padding-bottom: clamp(0px, 1.66vw, 24px);
         padding-right: clamp(0px, 1.66vw, 24px);
 
-        /* width: 192px; */
         margin: 0;
       }
 
       .schedule-section-p {
-        /* font-size: var(--desctop-text-preset-font-size-4); */
         font-size: clamp(0px, 1.25vw, 18px);
 
         font-weight: var(--desctop-text-preset-font-weight-4);
         letter-spacing: var(--desctop-text-preset-letter-spacing-4);
 
-        /* line-height: var(--desctop-text-preset-line-height-4); */
         line-height: clamp(0px, 1.38vw, 20px);
 
         padding-top: clamp(0px, 1.66vw, 24px);
         padding-right: clamp(0px, 1.66vw, 24px);
-        /* width: 192px; */
+
         margin: 0;
       }
 
@@ -393,7 +351,6 @@
 
         background-color: #7551dc;
 
-        /* padding: 22.89px 24px; */
         padding: clamp(0px, 1.59vw, 22.89px) clamp(0px, 1.66vw, 24px);
 
         display: flex;
@@ -495,10 +452,9 @@
 
       .manage-multiple-section-h2 {
         font-weight: 550;
-				
+
         font-size: clamp(0px, 2.2222vw, 32px);
         letter-spacing: clamp(-2.7px, -0.1875vw, 0px);
-        /* letter-spacing: -2px; */
 
         line-height: clamp(0px, 1.9444vw, 28px);
 
@@ -551,7 +507,6 @@
           font-size: var(--tablet-text-preset-font-size-2);
           letter-spacing: var(--tablet-text-preset-letter-spacing-2);
           line-height: var(--tablet-text-preset-line-height-2);
-          /* width: 250px; */
         }
 
         .create-and-schedule-section-pic {
@@ -559,39 +514,28 @@
           height: 90.35px;
         }
 
-				.write-your-content-section {
-        grid-row: 1;
-        grid-column: 2/-1;
+        .write-your-content-section {
+          grid-row: 1;
+          grid-column: 2/-1;
 
-				padding-top: 24px;
-        padding-left: 24px;
-        padding-bottom: 24px;
-			}
+          padding-top: 24px;
+          padding-left: 24px;
+          padding-bottom: 24px;
+        }
 
+        .write-your-content-section-pic {
+          width: 219.95px;
+          height: 222.5px;
+        }
 
-			.write-your-content-section-pic{
-      width: 219.95px; 
-       height: 222.5px;
-      }
+        .write-your-content-section-h2 {
+          font-weight: 500;
+          font-size: var(--tablet-text-preset-font-size-2);
+          line-height: var(--tablet-text-preset-line-height-2);
+          letter-spacing: -2px;
 
-
-
-
-
-
-
-			.write-your-content-section-h2{
-				font-weight: 500;
-				font-size: var(--tablet-text-preset-font-size-2);
-				line-height: var(--tablet-text-preset-line-height-2);
-				letter-spacing: -2px;
-
-				/* margin-right: clamp(0px, 6.82vw , 70px); */
-				width:280px;
-			}
-
-
-
+          width: 280px;
+        }
 
         .social-media-section {
           padding: 72px 76px;
@@ -606,7 +550,7 @@
           text-align: center;
           margin: 0;
 
-					width: 535.29px;
+          width: 535.29px;
         }
 
         .social-media-section-reviews-box {
@@ -651,23 +595,20 @@
         }
 
         .maintain-a-consistent-section-h2 {
-          /* font-size: var(--desctop-text-preset-font-size-3); */
           font-size: 28px;
 
           font-weight: var(--tablet-text-preset-font-weight-3);
           letter-spacing: var(--tablet-text-preset-letter-spacing-3);
 
-          /* line-height: var(--desctop-text-preset-line-height-3); */
           line-height: 26px;
 
           padding: 0;
-          /* background-color: #fff; */
+
           width: 251px;
           margin: 0;
         }
 
         .maintain-a-consistent-section-pic {
-          /* padding-top: 16px; */
           width: 208px;
           height: 157px;
         }
@@ -679,14 +620,13 @@
           padding: 32px 50.09px;
 
           display: flex;
-          /* flex-direction: row; */
-          /* align-items: center; */
+
           justify-content: center;
         }
 
         .schedule-section-content-box {
           align-items: center;
-          /* gap:16px; */
+
           width: 359px;
           justify-content: center;
           height: 432.82px;
@@ -698,8 +638,8 @@
         }
 
         .schedule-section-h2 {
-					font-weight: 550;
-					
+          font-weight: 550;
+
           font-size: var(--tablet-text-preset-font-size-3);
           letter-spacing: var(--tablet-text-preset-letter-spacing-3);
 
@@ -814,10 +754,8 @@
 
           margin-top: 145px;
           margin-left: 24px;
-          /* margin-right: 104px; */
+
           margin-right: clamp(104px, 13.5417vw, 154px);
-          /* margin-right: clamp(114px, 14.84vw, 154px); */
-          /* margin-right: clamp(84px, 14.84vw, 154px); */
         }
       }
 
@@ -884,7 +822,7 @@
           text-align: center;
           margin: 0;
 
-					width: 279px;
+          width: 279px;
         }
 
         .maintain-a-consistent-section {
@@ -1020,44 +958,30 @@
           margin-right: 16px;
         }
 
-				.write-your-content-section {
-        grid-row: 2;
-        grid-column: 1/-1;
+        .write-your-content-section {
+          grid-row: 2;
+          grid-column: 1/-1;
 
-				padding-top: 24px;
-        padding-left: 24px;
-        padding-bottom: 24px;
-			}
+          padding-top: 24px;
+          padding-left: 24px;
+          padding-bottom: 24px;
+        }
 
+        .write-your-content-section-h2 {
+          font-weight: 500;
+          font-size: var(--mobile-text-preset-font-size-2);
+          line-height: var(--mobile-text-preset-line-height-2);
+          letter-spacing: -2px;
 
-
-
-			.write-your-content-section-h2{
-				font-weight: 500;
-				font-size: var(--mobile-text-preset-font-size-2);
-				line-height: var(--mobile-text-preset-line-height-2);
-				letter-spacing: -2px;
-
-			
-				width:240px;
-			}
-
-
-
-
-
-
-
+          width: 240px;
+        }
       }
     </style>
   </head>
 
   <body>
-    <!-- !!!!!!!!!
-		 !!!!!!!!!!!!!!!!
-		 do hot foget hiden h1 -->
-
     <main class="main-content-container">
+      <h1 class="visually-hidden">Bento grid portfolio work by Shatskyi.O</h1>
       <div class="upper-group">
         <section class="social-media-section">
           <h2 class="social-media-section-h2">
@@ -1074,7 +998,7 @@
             <p class="social-media-section-p">Over 4,000 5-star reviews</p>
           </div>
         </section>
-        <!-- <section class="two">2</section> -->
+
         <section class="maintain-a-consistent-section">
           <div class="maintain-a-consistent-section-content-box">
             <h2 class="maintain-a-consistent-section-h2">
